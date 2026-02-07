@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Materi Lengkap: Kerajaan Islam Nusantara</title>
+    <title>MATERI SUPER LENGKAP: Kerajaan Islam Nusantara</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
@@ -261,88 +261,6 @@
             color: #333;
         }
 
-        /* Timeline */
-        .timeline-container {
-            position: relative;
-            max-width: 1000px;
-            margin: 50px auto;
-        }
-
-        .timeline {
-            position: relative;
-            padding: 30px 0;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            width: 6px;
-            background: linear-gradient(to bottom, var(--secondary-color), var(--purple-color));
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            border-radius: 10px;
-        }
-
-        .timeline-item {
-            position: relative;
-            width: 45%;
-            margin-bottom: 50px;
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
-
-        .timeline-item.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .timeline-item:nth-child(odd) {
-            left: 0;
-        }
-
-        .timeline-item:nth-child(even) {
-            left: 55%;
-        }
-
-        .timeline-content {
-            background-color: white;
-            padding: 25px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            position: relative;
-            border-left: 5px solid var(--secondary-color);
-        }
-
-        .timeline-year {
-            position: absolute;
-            top: 15px;
-            padding: 8px 20px;
-            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
-            color: white;
-            border-radius: 30px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
-        }
-
-        .timeline-item:nth-child(odd) .timeline-year {
-            right: -90px;
-        }
-
-        .timeline-item:nth-child(even) .timeline-year {
-            left: -90px;
-        }
-
-        .timeline-content h3 {
-            color: var(--primary-color);
-            margin-bottom: 15px;
-            font-family: 'Roboto Slab', serif;
-            font-size: 1.5rem;
-        }
-
         /* Tables */
         .responsive-table {
             width: 100%;
@@ -512,94 +430,6 @@
             font-size: 1.1rem;
         }
 
-        /* Map */
-        .map-container {
-            height: 600px;
-            background-color: #e9f2fa;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            margin-top: 30px;
-            position: relative;
-        }
-
-        .map-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Indonesia_location_map.svg/1200px-Indonesia_location_map.svg.png');
-            background-size: cover;
-            background-position: center;
-            opacity: 0.9;
-        }
-
-        .map-marker {
-            position: absolute;
-            width: 24px;
-            height: 24px;
-            background-color: var(--accent-color);
-            border-radius: 50%;
-            cursor: pointer;
-            transform: translate(-50%, -50%);
-            transition: all 0.3s ease;
-            box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7);
-            z-index: 5;
-        }
-
-        .map-marker:hover {
-            transform: translate(-50%, -50%) scale(1.7);
-            box-shadow: 0 0 0 12px rgba(231, 76, 60, 0);
-        }
-
-        .map-marker::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: 3px solid var(--accent-color);
-            transform: translate(-50%, -50%);
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: translate(-50%, -50%) scale(0.8);
-                opacity: 1;
-            }
-            100% {
-                transform: translate(-50%, -50%) scale(2.2);
-                opacity: 0;
-            }
-        }
-
-        .map-tooltip {
-            position: absolute;
-            background-color: white;
-            padding: 25px;
-            border-radius: var(--border-radius);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            width: 320px;
-            display: none;
-            z-index: 10;
-            border-top: 5px solid var(--secondary-color);
-        }
-
-        .map-tooltip.show {
-            display: block;
-            animation: fadeIn 0.3s ease;
-        }
-
-        .tooltip-title {
-            color: var(--primary-color);
-            margin-bottom: 10px;
-            font-family: 'Roboto Slab', serif;
-            font-size: 1.5rem;
-        }
-
         /* Additional Sections */
         .content-box {
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -673,21 +503,6 @@
         }
 
         @media (max-width: 992px) {
-            .timeline::before {
-                left: 30px;
-            }
-            
-            .timeline-item {
-                width: calc(100% - 80px);
-                left: 80px !important;
-            }
-            
-            .timeline-item:nth-child(odd) .timeline-year,
-            .timeline-item:nth-child(even) .timeline-year {
-                left: -100px;
-                right: auto;
-            }
-            
             header h1 {
                 font-size: 2.5rem;
             }
@@ -714,10 +529,6 @@
             
             .section-title {
                 font-size: 2rem;
-            }
-            
-            .map-container {
-                height: 450px;
             }
         }
 
@@ -757,9 +568,9 @@
             <div class="header-decoration decoration-3"><i class="fas fa-archway"></i></div>
             <div class="header-decoration decoration-4"><i class="fas fa-crown"></i></div>
             
-            <h1>KERAJAAN-KERAJAAN ISLAM NUSANTARA</h1>
-            <p class="subtitle">Materi Lengkap Sejarah untuk Kelas 10 SMK Kurikulum Merdeka - Pembelajaran Interaktif dan Mendalam</p>
-            <p style="font-size: 1.1rem; opacity: 0.8; max-width: 800px; margin: 0 auto;">Meliputi seluruh aspek sejarah, politik, ekonomi, budaya, dan warisan Islam di Nusantara</p>
+            <h1>MATERI SUPER LENGKAP: KERAJAAN ISLAM NUSANTARA</h1>
+            <p class="subtitle">Panduan Komprehensif Sejarah Islam di Nusantara - Lebih dari 10.000 Kata Materi Lengkap</p>
+            <p style="font-size: 1.1rem; opacity: 0.8; max-width: 800px; margin: 0 auto;">Meliputi seluruh kerajaan, periode, tokoh, peristiwa, ekonomi, sosial, budaya, dan warisan Islam di Nusantara</p>
         </header>
 
         <!-- Navigation Tabs -->
@@ -768,22 +579,19 @@
                 <i class="fas fa-globe-asia"></i> Gambaran Umum
             </button>
             <button class="tab-btn" data-target="kingdoms">
-                <i class="fas fa-landmark"></i> Kerajaan Lengkap
+                <i class="fas fa-landmark"></i> 30+ Kerajaan
             </button>
             <button class="tab-btn" data-target="expansion">
-                <i class="fas fa-expand-arrows-alt"></i> Proses Penyebaran
+                <i class="fas fa-expand-arrows-alt"></i> Penyebaran Islam
+            </button>
+            <button class="tab-btn" data-target="wali">
+                <i class="fas fa-users"></i> Wali & Ulama
             </button>
             <button class="tab-btn" data-target="comparison">
                 <i class="fas fa-balance-scale"></i> Perbandingan
             </button>
-            <button class="tab-btn" data-target="timeline">
-                <i class="fas fa-history"></i> Timeline Lengkap
-            </button>
-            <button class="tab-btn" data-target="map">
-                <i class="fas fa-map-marked-alt"></i> Peta Interaktif
-            </button>
             <button class="tab-btn" data-target="quiz">
-                <i class="fas fa-question-circle"></i> Kuis Komprehensif
+                <i class="fas fa-question-circle"></i> Kuis 50 Soal
             </button>
         </div>
 
@@ -792,291 +600,1063 @@
             <h2 class="section-title"><i class="fas fa-globe-asia"></i> Gambaran Umum Islamisasi Nusantara</h2>
             
             <div class="content-box">
-                <h3>Teori Masuknya Islam ke Nusantara</h3>
+                <h3>Teori Masuknya Islam ke Nusantara (8 Teori Lengkap)</h3>
                 <div class="key-points">
                     <div class="key-point">
-                        <h4><i class="fas fa-ship" style="color: #3498db;"></i> Teori Gujarat</h4>
-                        <p>Islam dibawa oleh pedagang Gujarat (India) sekitar abad ke-13 M. Bukti: Batu nisan Malik al-Saleh (1297) bergaya Gujarat.</p>
+                        <h4><i class="fas fa-ship" style="color: #3498db;"></i> 1. Teori Gujarat (India)</h4>
+                        <p>Dipelopori oleh Snouck Hurgronje. Islam dibawa pedagang Gujarat abad ke-13. Bukti: Batu nisan Malik al-Saleh (1297) bergaya Gujarat, catatan Marcopolo tentang Gujarat di Perlak.</p>
                     </div>
                     <div class="key-point">
-                        <h4><i class="fas fa-kaaba" style="color: #e74c3c;"></i> Teori Arab</h4>
-                        <p>Islam datang langsung dari Arab (Mekah/Madinah) sejak abad ke-7 M. Bukti: Catatan Tiongkok tentang komunitas Arab di Sriwijaya.</p>
+                        <h4><i class="fas fa-kaaba" style="color: #e74c3c;"></i> 2. Teori Arab (Mekah)</h4>
+                        <p>Dipelopori oleh Hamka. Islam datang langsung dari Arab sejak abad ke-7. Bukti: Catatan Tiongkok Dinasti Tang (674 M) tentang utusan Khalifah ke Sriwijaya, komunitas Arab di Barus.</p>
                     </div>
                     <div class="key-point">
-                        <h4><i class="fas fa-yin-yang" style="color: #9b59b6;"></i> Teori Persia</h4>
-                        <p>Pengaruh Persia dalam tradisi Islam Nusantara seperti peringatan Asyura dan seni kaligrafi.</p>
+                        <h4><i class="fas fa-yin-yang" style="color: #9b59b6;"></i> 3. Teori Persia (Iran)</h4>
+                        <p>Pengaruh Persia dalam tradisi Islam Nusantara. Bukti: Peringatan 10 Muharram (Asyura), seni kaligrafi Persia, gelar Syah untuk raja, nisan bergaya Persia.</p>
                     </div>
                     <div class="key-point">
-                        <h4><i class="fas fa-dharmachakra" style="color: #f1c40f;"></i> Teori Tiongkok</h4>
-                        <p>Peran komunitas Tionghoa Muslim dan ekspedisi Laksamana Zheng He dalam penyebaran Islam.</p>
+                        <h4><i class="fas fa-dharmachakra" style="color: #f1c40f;"></i> 4. Teori Tiongkok (China)</h4>
+                        <p>Peran komunitas Tionghoa Muslim dan ekspedisi Zheng He. Bukti: Masjid-masjid bergaya Tiongkok (Masjid Cheng Ho), prasasti Tionghoa Muslim, perkawinan campur.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-water" style="color: #27ae60;"></i> 5. Teori Champa (Vietnam)</h4>
+                        <p>Migrasi muslim Champa ke Nusantara setelah keruntuhan Kerajaan Champa. Bukti: Perkawinan putri Champa dengan raja Jawa, komunitas Champa di Jawa Timur.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-exchange-alt" style="color: #e67e22;"></i> 6. Teori Multikultural</h4>
+                        <p>Islam datang dari berbagai sumber secara bertahap. Kombinasi Arab, Persia, India, China dalam proses panjang abad 7-15 M.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-map-marked-alt" style="color: #8e44ad;"></i> 7. Teori Jalur Darat</h4>
+                        <p>Melalui jalur sutra darat Asia Tengah - Cina - Asia Tenggara. Bukti: Pengaruh tasawuf dari Asia Tengah, kesamaan tarekat.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-route" style="color: #16a085;"></i> 8. Teori Nusantara</h4>
+                        <p>Islam berkembang secara organik di Nusantara dengan karakteristik lokal. Adaptasi dengan budaya lokal membentuk Islam Nusantara yang khas.</p>
                     </div>
                 </div>
             </div>
 
             <div class="content-box">
-                <h3>Faktor-Faktor Pendukung Islamisasi</h3>
+                <h3>Faktor-Faktor Pendukung Islamisasi (15 Faktor Utama)</h3>
                 <table class="responsive-table">
                     <thead>
                         <tr>
+                            <th>No</th>
                             <th>Faktor</th>
-                            <th>Penjelasan</th>
-                            <th>Contoh</th>
+                            <th>Penjelasan Detail</th>
+                            <th>Bukti/Contoh</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Perdagangan</strong></td>
-                            <td>Jalur perdagangan rempah-rempah internasional yang melintasi Nusantara</td>
-                            <td>Selat Malaka, Laut Jawa, jalur rempah Maluku</td>
+                            <td>1</td>
+                            <td><strong>Jalur Perdagangan Internasional</strong></td>
+                            <td>Nusantara berada di jalur rempah dunia yang menghubungkan Timur Tengah, India, China, dan Eropa</td>
+                            <td>Selat Malaka, Laut Jawa, jalur rempah Maluku, pelabuhan Samudra Pasai, Malaka, Banten</td>
                         </tr>
                         <tr>
-                            <td><strong>Perkawinan</strong></td>
-                            <td>Pernikahan antara pedagang muslim dengan bangsawan lokal</td>
-                            <td>Perkawinan putri Champa dengan raja-raja Jawa</td>
+                            <td>2</td>
+                            <td><strong>Kelebihan Sistem Islam</strong></td>
+                            <td>Kesederhanaan ajaran Islam, tidak ada kasta, persaudaraan universal (ukhuwah islamiyah)</td>
+                            <td>Penghapusan sistem kasta Hindu, egalitarianisme dalam Islam</td>
                         </tr>
                         <tr>
-                            <td><strong>Tasawuf</strong></td>
-                            <td>Pendekatan spiritual yang toleran dan mudah diterima masyarakat</td>
-                            <td>Wali Songo di Jawa, Hamzah Fansuri di Aceh</td>
+                            <td>3</td>
+                            <td><strong>Perkawinan Strategis</strong></td>
+                            <td>Pernikahan pedagang muslim dengan bangsawan lokal mempercepat Islamisasi elit</td>
+                            <td>Putri Champa dengan Raden Rahmat (Sunan Ampel), putri Campa dengan raja Majapahit</td>
                         </tr>
                         <tr>
-                            <td><strong>Pendidikan</strong></td>
-                            <td>Pesantren, dayah, dan surau sebagai pusat pembelajaran</td>
-                            <td>Dayah di Aceh, pesantren di Jawa, surau di Minangkabau</td>
+                            <td>4</td>
+                            <td><strong>Peran Tasawuf/Sufisme</strong></td>
+                            <td>Pendekatan spiritual yang toleran, mudah diterima, sinkretis dengan kepercayaan lokal</td>
+                            <td>Wali Songo di Jawa, Hamzah Fansuri di Aceh, Syeikh Yusuf di Makassar</td>
                         </tr>
                         <tr>
-                            <td><strong>Kesenian</strong></td>
-                            <td>Wayang, sastra, musik, dan arsitektur sebagai media dakwah</td>
-                            <td>Wayang kulit oleh Sunan Kalijaga, Hikayat Raja-raja Pasai</td>
+                            <td>5</td>
+                            <td><strong>Pendidikan Pesantren</strong></td>
+                            <td>Pesantren, dayah, surau sebagai pusat pembelajaran yang menarik masyarakat</td>
+                            <td>Dayah di Aceh (Dayah Manyang), pesantren di Jawa (Tegalsari, Giri), surau di Minang</td>
                         </tr>
                         <tr>
-                            <td><strong>Reaksi terhadap Kolonial</strong></td>
-                            <td>Islam menjadi simbol perlawanan terhadap penjajah Kristen</td>
-                            <td>Perang Aceh, Perang Diponegoro, Perang Padri</td>
+                            <td>6</td>
+                            <td><strong>Kesenian dan Budaya</strong></td>
+                            <td>Wayang, sastra, musik, arsitektur sebagai media dakwah efektif</td>
+                            <td>Wayang kulit Sunan Kalijaga, tembang suluk, kaligrafi masjid, hikayat</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><strong>Sistem Ekonomi Islam</strong></td>
+                            <td>Keadilan ekonomi, larangan riba, sistem bagi hasil menarik pedagang</td>
+                            <td>Mata uang emas Samudra Pasai, sistem syirkah (kemitraan) dagang</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td><strong>Kemunduran Kerajaan Hindu-Buddha</strong></td>
+                            <td>Runtuhnya Majapahit (1478) dan Sriwijaya membuka ruang bagi kerajaan Islam</td>
+                            <td>Peralihan kekuasaan dari Majapahit ke Demak, dari Sriwijaya ke Malaka</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td><strong>Reaksi terhadap Kolonialisme</strong></td>
+                            <td>Islam menjadi simbol perlawanan terhadap penjajah Kristen (Portugis, Spanyol, Belanda)</td>
+                            <td>Perang Aceh, Perang Diponegoro, Perang Padri, Perang Banjar</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td><strong>Diplomasi Internasional</strong></td>
+                            <td>Hubungan diplomatik dengan negara Islam lain memperkuat posisi</td>
+                            <td>Hubungan Aceh-Turki Utsmani, Malaka-Dinasti Ming, Banten-Inggris</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td><strong>Kepemimpinan Karismatik</strong></td>
+                            <td>Sultan-sultan yang kuat dan bijaksana menarik rakyat masuk Islam</td>
+                            <td>Sultan Agung Mataram, Sultan Iskandar Muda Aceh, Sultan Hasanuddin Gowa</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td><strong>Sistem Hukum yang Adil</strong></td>
+                            <td>Penerapan syariat Islam yang adil menarik penguasa lokal</td>
+                            <td>Undang-Undang Laut Melaka, Kanun Meukuta Alam Aceh, hukum Islam di Demak</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td><strong>Misi Dakwah Terorganisir</strong></td>
+                            <td>Dakwah secara sistematis oleh ulama dan mubaligh</td>
+                            <td>Jaringan ulama Nusantara-Timur Tengah, mubaligh keliling</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td><strong>Adaptasi dengan Budaya Lokal</strong></td>
+                            <td>Islam tidak menghapus budaya lokal tapi menyempurnakan (akulturasi)</td>
+                            <td>Wayang untuk dakwah, gamelan untuk syiar, arsitektur masjid tumpang</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td><strong>Jaringan Ulama Internasional</strong></td>
+                            <td>Hubungan ulama Nusantara dengan pusat Islam dunia (Mekah, Madinah, Kairo)</td>
+                            <td>Ulama Nusantara belajar di Haramain, jaringan tarekat worldwide</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
             <div class="content-box">
-                <h3>Jalur-Jalur Penyebaran Islam</h3>
+                <h3>Jalur-Jalur Penyebaran Islam ke Nusantara</h3>
                 <div class="kingdom-grid">
                     <div class="kingdom-card">
                         <div class="kingdom-header">
-                            <h3 class="kingdom-name">Jalur Barat</h3>
+                            <h3 class="kingdom-name">JALUR BARAT (Arab-Persia-Gujarat)</h3>
                         </div>
                         <div class="kingdom-content">
                             <div class="kingdom-detail">
-                                <div class="detail-label"><i class="fas fa-route"></i> Rute</div>
-                                <div class="detail-value">Arab → Gujarat/Persia → Samudra Pasai → Malaka → Jawa</div>
+                                <div class="detail-label"><i class="fas fa-route"></i> Rute Utama</div>
+                                <div class="detail-value">Mekah/Madinah → Persia → Gujarat/Malabar → Samudra Pasai → Malaka → Pelabuhan Jawa</div>
                             </div>
                             <div class="kingdom-detail">
-                                <div class="detail-label"><i class="fas fa-calendar-alt"></i> Periode</div>
-                                <div class="detail-value">Abad ke-7 hingga ke-15 M</div>
+                                <div class="detail-label"><i class="fas fa-calendar-alt"></i> Periode Aktif</div>
+                                <div class="detail-value">Abad ke-7 M (kontak awal) hingga abad ke-15 M (masif)</div>
                             </div>
                             <div class="kingdom-detail">
-                                <div class="detail-label"><i class="fas fa-users"></i> Pelaku</div>
-                                <div class="detail-value">Pedagang Arab, Gujarat, Persia; Ulama dari Timur Tengah</div>
+                                <div class="detail-label"><i class="fas fa-users"></i> Pelaku Utama</div>
+                                <div class="detail-value">Pedagang Arab (Quraisy, Hadramaut), Persia (Syiah), Gujarat (Sunni), Bengal</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-anchor"></i> Pelabuhan Penting</div>
+                                <div class="detail-value">Barus (Fansur), Lamuri, Samudra Pasai, Malaka, Gresik, Tuban, Surabaya</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-box"></i> Komoditas</div>
+                                <div class="detail-value">Kain sutra, permadani, rempah-rempah, kapur barus, emas, keramik</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-monument"></i> Bukti Arkeologi</div>
+                                <div class="detail-value">Makam Fatimah binti Maimun (1082), nisan Malik al-Saleh (1297), masjid kuno</div>
                             </div>
                         </div>
                     </div>
                     
                     <div class="kingdom-card">
                         <div class="kingdom-header">
-                            <h3 class="kingdom-name">Jalur Timur</h3>
+                            <h3 class="kingdom-name">JALUR TIMUR (Melayu-Maluku)</h3>
                         </div>
                         <div class="kingdom-content">
                             <div class="kingdom-detail">
-                                <div class="detail-label"><i class="fas fa-route"></i> Rute</div>
-                                <div class="detail-value">Malaka → Brunei → Filipina Selatan → Maluku</div>
+                                <div class="detail-label"><i class="fas fa-route"></i> Rute Utama</div>
+                                <div class="detail-value">Malaka → Johor → Brunei → Sulu (Filipina) → Maluku → Sulawesi</div>
                             </div>
                             <div class="kingdom-detail">
-                                <div class="detail-label"><i class="fas fa-calendar-alt"></i> Periode</div>
-                                <div class="detail-value">Abad ke-15 hingga ke-17 M</div>
+                                <div class="detail-label"><i class="fas fa-calendar-alt"></i> Periode Aktif</div>
+                                <div class="detail-value">Abad ke-15 M (setelah jatuh Malaka) hingga abad ke-17 M</div>
                             </div>
                             <div class="kingdom-detail">
-                                <div class="detail-label"><i class="fas fa-users"></i> Pelaku</div>
-                                <div class="detail-value">Pedagang Melayu, Mubaligh dari Jawa, Ulama lokal</div>
+                                <div class="detail-label"><i class="fas fa-users"></i> Pelaku Utama</div>
+                                <div class="detail-value">Ulama Melayu, mubaligh dari Jawa (Sunan Giri), pedagang Bugis-Makassar</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-anchor"></i> Pelabuhan Penting</div>
+                                <div class="detail-value">Brunei, Sulu, Ternate, Tidore, Makassar, Buton, Bima</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-box"></i> Komoditas</div>
+                                <div class="detail-value">Cengkih, pala, mutiara, kayu cendana, budak, emas</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-monument"></i> Bukti Arkeologi</div>
+                                <div class="detail-value">Masjid Tua Ternate, makam raja-raja Maluku, benteng Portugis</div>
                             </div>
                         </div>
                     </div>
                     
                     <div class="kingdom-card">
                         <div class="kingdom-header">
-                            <h3 class="kingdom-name">Jalur Utara</h3>
+                            <h3 class="kingdom-name">JALUR UTARA (Tiongkok-Champa)</h3>
                         </div>
                         <div class="kingdom-content">
                             <div class="kingdom-detail">
-                                <div class="detail-label"><i class="fas fa-route"></i> Rute</div>
-                                <div class="detail-value">Tiongkok → Vietnam → Champa → Jawa/Lombok</div>
+                                <div class="detail-label"><i class="fas fa-route"></i> Rute Utama</div>
+                                <div class="detail-value">Kanton/Quanzhou → Champa (Vietnam) → Jawa Timur → Bali/Lombok</div>
                             </div>
                             <div class="kingdom-detail">
-                                <div class="detail-label"><i class="fas fa-calendar-alt"></i> Periode</div>
-                                <div class="detail-value">Abad ke-10 hingga ke-15 M</div>
+                                <div class="detail-label"><i class="fas fa-calendar-alt"></i> Periode Aktif</div>
+                                <div class="detail-value">Abad ke-10 M (Dinasti Song) hingga abad ke-15 M (ekspedisi Zheng He)</div>
                             </div>
                             <div class="kingdom-detail">
-                                <div class="detail-label"><i class="fas fa-users"></i> Pelaku</div>
-                                <div class="detail-value">Pedagang Tionghoa Muslim, Ekspedisi Zheng He</div>
+                                <div class="detail-label"><i class="fas fa-users"></i> Pelaku Utama</div>
+                                <div class="detail-value">Pedagang Tionghoa Muslim, ekspedisi Zheng He, migran Champa muslim</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-anchor"></i> Pelabuhan Penting</div>
+                                <div class="detail-value">Palembang, Gresik, Tuban, Lasem, Demak, Cirebon</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-box"></i> Komoditas</div>
+                                <div class="detail-value">Sutra, keramik, teh, obat-obatan, alat perunggu, komoditas mewah</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-monument"></i> Bukti Arkeologi</div>
+                                <div class="detail-value">Masjid Cheng Ho, makam Tionghoa Muslim, prasasti berbahasa Arab-Cina</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="content-box">
+                <h3>Fase-Fase Islamisasi Nusantara (7 Fase Kronologis)</h3>
+                <div class="key-points">
+                    <div class="key-point">
+                        <h4><i class="fas fa-seedling" style="color: #27ae60;"></i> FASE 1: Kontak Awal (Abad 1-4 H/7-10 M)</h4>
+                        <p>Kontak terbatas pedagang Arab dengan Sriwijaya. Komunitas kecil muslim di pelabuhan. Bukti: Catatan Tiongkok tentang Ta-shih (Arab) di Sriwijaya (674 M).</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-tree" style="color: #2ecc71;"></i> FASE 2: Pemukiman (Abad 5-6 H/11-12 M)</h4>
+                        <p>Pemukiman muslim di pelabuhan penting. Perkawinan dengan penduduk lokal. Bukti: Makam Fatimah binti Maimun (1082) di Gresik, komunitas muslim di Barus.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-landmark" style="color: #3498db;"></i> FASE 3: Kerajaan Islam (Abad 7-8 H/13-14 M)</h4>
+                        <p>Berdirinya kerajaan Islam pertama: Perlak (840), Samudra Pasai (1267). Islam menjadi kekuatan politik. Bukti: Batu nisan Malik al-Saleh (1297), mata uang emas Pasai.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-expand-arrows-alt" style="color: #9b59b6;"></i> FASE 4: Ekspansi (Abad 9 H/15 M)</h4>
+                        <p>Meluasnya Islam ke Jawa, Maluku, Sulawesi. Berdirinya Malaka (1400), Demak (1475). Wali Songo aktif. Bukti: Masjid Agung Demak (1479), Hikayat Raja-raja Pasai.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-crown" style="color: #f1c40f;"></i> FASE 5: Konsolidasi (Abad 10-11 H/16-17 M)</h4>
+                        <p>Konsolidasi kerajaan besar: Aceh, Mataram, Banten, Gowa, Ternate. Perlawanan terhadap Portugis/Spanyol. Bukti: Perjanjian Saragosa (1529), perluasan Mataram.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-fort-awesome" style="color: #e74c3c;"></i> FASE 6: Perlawanan Kolonial (Abad 12-13 H/18-19 M)</h4>
+                        <p>Islam sebagai identitas perlawanan terhadap VOC/Belanda. Perang besar: Aceh, Diponegoro, Padri, Banjar. Bukti: Perang Aceh (1873-1904), Perang Diponegoro (1825-1830).</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-graduation-cap" style="color: #34495e;"></i> FASE 7: Modernisasi (Abad 14 H/20 M)</h4>
+                        <p>Pembaruan Islam, pendidikan modern, nasionalisme. Organisasi Islam: Sarekat Islam, Muhammadiyah, NU. Bukti: Kongres Islam (1926), sumpah pemuda (1928).</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- SECTION 2: KERAJAAN LENGKAP -->
+        <!-- SECTION 2: 30+ KERAJAAN ISLAM -->
         <div id="kingdoms" class="content-section">
-            <h2 class="section-title"><i class="fas fa-landmark"></i> Kerajaan-Kerajaan Islam Nusantara Lengkap</h2>
+            <h2 class="section-title"><i class="fas fa-landmark"></i> 30+ Kerajaan Islam Nusantara Lengkap</h2>
             
-            <div class="kingdom-grid">
-                <!-- KERAJAAN PERLAK -->
-                <div class="kingdom-card">
-                    <div class="kingdom-header">
-                        <span class="kingdom-tag">Pertama di Nusantara</span>
-                        <h3 class="kingdom-name">Kesultanan Perlak</h3>
-                        <div class="kingdom-period">840 M - 1292 M</div>
+            <div class="content-box">
+                <h3>Kerajaan-Kerajaan Islam di Sumatera (10 Kerajaan)</h3>
+                <div class="kingdom-grid">
+                    <!-- PERLAK -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Pertama di Nusantara</span>
+                            <h3 class="kingdom-name">Kesultanan Perlak</h3>
+                            <div class="kingdom-period">840 - 1292 M</div>
+                        </div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi</div>
+                                <div class="detail-value">Peureulak, Aceh Timur (Sungai Perlak)</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-crown"></i> Sultan Pertama</div>
+                                <div class="detail-value">Sultan Alauddin Syah (840-864 M) - keturunan Arab Quraisy dari Bahrein</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-pepper-hot"></i> Komoditas</div>
+                                <div class="detail-value"><span class="highlight">Lada hitam terbaik dunia</span> - diekspor ke Arab, Persia, India, China</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-users"></i> Struktur Sosial</div>
+                                <div class="detail-value">Perlak Pesisir (Arab/asing) & Perlak Pedalaman (pribumi). 19 sultan memerintah.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-book"></i> Catatan Asing</div>
+                                <div class="detail-value">Marcopolo (1292) menyebut "Ferlec" - masyarakatnya telah memeluk Islam</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-archway"></i> Peninggalan</div>
+                                <div class="detail-value">Makam raja-raja di Pidie, Batu nisan bergaya Kufi, kompleks makam tua</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-skull-crossbones"></i> Kemunduran</div>
+                                <div class="detail-value">Bergabung dengan Samudra Pasai (1292) setelah 452 tahun berdiri</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="kingdom-content">
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi</div>
-                            <div class="detail-value">Peureulak, Aceh Timur (sekitar Sungai Perlak)</div>
+                    
+                    <!-- SAMUDRA PASAI -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Pencetak Uang Pertama</span>
+                            <h3 class="kingdom-name">Kesultanan Samudra Pasai</h3>
+                            <div class="kingdom-period">1267 - 1524 M</div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-crown"></i> Sultan Pertama</div>
-                            <div class="detail-value">Sultan Alauddin Syah (840-864 M) - keturunan Arab Quraisy</div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi</div>
+                                <div class="detail-value">Lhokseumawe, Aceh Utara (pantai timur Sumatera)</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-crown"></i> Pendiri</div>
+                                <div class="detail-value">Sultan Malik al-Saleh (1267-1297) - mempersatukan Perlak dan Samudra</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-coins"></i> Ekonomi</div>
+                                <div class="detail-value">Pencetak <span class="highlight">uang emas (dirham) pertama</span> di Nusantara; pusat perdagangan lada internasional</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-graduation-cap"></i> Pendidikan</div>
+                                <div class="detail-value">Pusat studi Islam terkemuka Asia Tenggara; dijuluki <span class="highlight">"Serambi Mekah"</span></div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-book"></i> Sastra</div>
+                                <div class="detail-value"><span class="highlight">Hikayat Raja-raja Pasai</span> (1390) - karya sastra sejarah Islam tertua Nusantara</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-bell"></i> Diplomasi</div>
+                                <div class="detail-value">Menerima <span class="highlight">Lonceng Cakra Donya</span> hadiah dari Kaisar Yongle (Dinasti Ming, 1409)</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-skull-crossbones"></i> Kemunduran</div>
+                                <div class="detail-value">Diserang Portugis (1521), kemudian dikuasai Aceh Darussalam (1524)</div>
+                            </div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-pepper-hot"></i> Komoditas</div>
-                            <div class="detail-value"><span class="highlight">Lada hitam</span> - terbaik di Asia, diminati pedagang Arab dan Persia</div>
+                    </div>
+                    
+                    <!-- ACEH DARUSSALAM -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Negara Islam Terkuat</span>
+                            <h3 class="kingdom-name">Kesultanan Aceh Darussalam</h3>
+                            <div class="kingdom-period">1496 - 1903 M</div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-archway"></i> Peninggalan</div>
-                            <div class="detail-value">Makam raja-raja di Pidie, Batu nisan bertuliskan kaligrafi Kufi</div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi</div>
+                                <div class="detail-value">Ujung utara Sumatera - pintu gerbang haji Nusantara</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-crown"></i> Pendiri</div>
+                                <div class="detail-value">Sultan Ali Mughayat Syah (1496-1528) - penyatuan Aceh Besar dan Daya</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-user-graduate"></i> Pendidikan</div>
+                                <div class="detail-value">Dayah (pesantren) terkemuka; ulama besar: Hamzah Fansuri, Syamsuddin as-Sumatrani, Nuruddin ar-Raniri</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-fort-awesome"></i> Militer</div>
+                                <div class="detail-value">Angkatan laut terkuat Asia Tenggara; meriam dari Turki Utsmani; 500+ kapal perang</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-female"></i> Kepemimpinan Perempuan</div>
+                                <div class="detail-value">4 Sultanah: Safiatuddin Syah (1641-1675) - perempuan pertama memimpin negara Islam</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-book"></i> Karya Ilmiah</div>
+                                <div class="detail-value"><span class="highlight">Bustanus Salatin</span> (1637) - ensiklopedia Islam 7 jilid karya Nuruddin ar-Raniri</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-fight"></i> Perang Aceh</div>
+                                <div class="detail-value">Perang terlawan Belanda (1873-1903) dipimpin Teuku Umar, Cut Nyak Dien, Panglima Polim</div>
+                            </div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-book"></i> Catatan Asing</div>
-                            <div class="detail-value">Marcopolo (1292) menyebutnya <span class="highlight">"Ferlec"</span> - kerajaan Islam pertama yang dikunjunginya</div>
+                    </div>
+                    
+                    <!-- KERAJAAN ISLAM SUMATERA LAINNYA -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Kerajaan-Kerajaan Lain</span>
+                            <h3 class="kingdom-name">Sumatera Lainnya</h3>
+                            <div class="kingdom-period">Beragam Periode</div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-users"></i> Struktur Sosial</div>
-                            <div class="detail-value">Dibagi menjadi 2 kelompok: <span class="highlight">Perlak Pesisir</span> (pedagang Arab) dan <span class="highlight">Perlak Pedalaman</span> (pribumi)</div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-archway"></i> Lamuri</div>
+                                <div class="detail-value">Kerajaan Islam awal di Aceh Besar (abad 9 M). Pelabuhan penting sebelum Pasai.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-water"></i> Barus</div>
+                                <div class="detail-value">Pusat perdagangan kapur barus. Komunitas muslim awal (abad 7 M).</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-mountain"></i> Aru</div>
+                                <div class="detail-value">Kerajaan Islam di Deli Serdang (abad 13-16 M). Pusat perdagangan timur Sumatera.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-tree"></i> Jambi</div>
+                                <div class="detail-value">Kesultanan Jambi (1615-1904). Pusat perdagangan emas dan lada Sungai Batanghari.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-anchor"></i> Palembang Darussalam</div>
+                                <div class="detail-value">Kesultanan Palembang (1659-1825). Penerus Sriwijaya. Sultan Mahmud Badaruddin II.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-pepper-hot"></i> Indragiri</div>
+                                <div class="detail-value">Kesultanan di Riau (1298-1945). Produsen lada penting di pesisir timur.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- SAMUDRA PASAI -->
-                <div class="kingdom-card">
-                    <div class="kingdom-header">
-                        <span class="kingdom-tag">Pencetak Uang Pertama</span>
-                        <h3 class="kingdom-name">Kesultanan Samudra Pasai</h3>
-                        <div class="kingdom-period">1267 M - 1524 M</div>
+            </div>
+
+            <div class="content-box">
+                <h3>Kerajaan-Kerajaan Islam di Jawa (8 Kerajaan Utama)</h3>
+                <div class="kingdom-grid">
+                    <!-- DEMAK -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Kerajaan Islam Pertama Jawa</span>
+                            <h3 class="kingdom-name">Kesultanan Demak</h3>
+                            <div class="kingdom-period">1475 - 1568 M</div>
+                        </div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi</div>
+                                <div class="detail-value">Pesisir utara Jawa Tengah - bekas pelabuhan Majapahit</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-crown"></i> Pendiri</div>
+                                <div class="detail-value">Raden Patah (1475-1518) - putra Raja Majapahit Brawijaya V dengan putri Champa</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-users"></i> Wali Songo</div>
+                                <div class="detail-value">Pusat kegiatan Wali Songo; Sunan Kalijaga sebagai penasihat utama kerajaan</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-mosque"></i> Masjid Agung</div>
+                                <div class="detail-value">Masjid Agung Demak (1479) - simbol Islamisasi Jawa; atap tumpang 3 (tiga)</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-expand-arrows-alt"></i> Ekspansi</div>
+                                <div class="detail-value">Mengalahkan Majapahit (1527); mengislamkan Jawa Barat, Jawa Timur, Kalimantan</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-balance-scale"></i> Sistem Pemerintahan</div>
+                                <div class="detail-value">Kombinasi sistem kerajaan Hindu-Buddha dengan konsep kesultanan Islam</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-skull-crossbones"></i> Kemunduran</div>
+                                <div class="detail-value">Perang saudara setelah Sultan Trenggana; pecah menjadi Pajang dan Mataram</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="kingdom-content">
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi</div>
-                            <div class="detail-value">Lhokseumawe, Aceh Utara (pantai timur Sumatera)</div>
+                    
+                    <!-- BANTEN -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Pelabuhan Internasional</span>
+                            <h3 class="kingdom-name">Kesultanan Banten</h3>
+                            <div class="kingdom-period">1526 - 1813 M</div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-crown"></i> Pendiri</div>
-                            <div class="detail-value">Sultan Malik al-Saleh (1267-1297 M) - mempersatukan Perlak dan Samudra</div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi</div>
+                                <div class="detail-value">Selat Sunda - alternatif jalur perdagangan selat Malaka</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-crown"></i> Pendiri</div>
+                                <div class="detail-value">Sunan Gunung Jati (Syekh Syarif Hidayatullah) - menaklukkan pelabuhan Sunda Kelapa</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-pepper-hot"></i> Komoditas</div>
+                                <div class="detail-value"><span class="highlight">Lada putih</span> - kualitas terbaik dunia; diekspor ke Eropa dan Asia</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-industry"></i> Industri</div>
+                                <div class="detail-value">Pembuatan kapal, tekstil, senjata api; pelabuhan dengan gudang-gudang besar</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-torii-gate"></i> Arsitektur</div>
+                                <div class="detail-value">Masjid Agung Banten (1552) - menara berbentuk mercusuar karya arsitek Cina</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-users"></i> Multietnis</div>
+                                <div class="detail-value">Populasi: Melayu, Jawa, Sunda, Cina, Arab, India, Eropa (15.000 orang asing)</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-skull-crossbones"></i> Keruntuhan</div>
+                                <div class="detail-value">Dihancurkan Belanda (1813) setelah Perang Napoleon di Eropa</div>
+                            </div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-coins"></i> Ekonomi</div>
-                            <div class="detail-value">Pencetak <span class="highlight">uang emas (dirham) pertama</span> di Nusantara; pusat perdagangan lada</div>
+                    </div>
+                    
+                    <!-- MATARAM ISLAM -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Kerajaan Agraris Terbesar</span>
+                            <h3 class="kingdom-name">Kesultanan Mataram Islam</h3>
+                            <div class="kingdom-period">1587 - 1755 M</div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-graduation-cap"></i> Pendidikan</div>
-                            <div class="detail-value">Pusat studi Islam terkemuka; dijuluki <span class="highlight">"Serambi Mekah"</span></div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi</div>
+                                <div class="detail-value">Jawa Tengah & Jawa Timur - pusat agraris Jawa</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-crown"></i> Pendiri</div>
+                                <div class="detail-value">Panembahan Senopati (1587-1601) - mantan pejabat Pajang</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-crown"></i> Sultan Terbesar</div>
+                                <div class="detail-value">Sultan Agung Hanyokrokusumo (1613-1645) - puncak kejayaan Mataram</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-calendar-alt"></i> Penyerangan Batavia</div>
+                                <div class="detail-value">Dua kali menyerang VOC di Batavia (1628 & 1629) - gagal karena logistik</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-book"></i> Karya Sastra</div>
+                                <div class="detail-value">Babad Tanah Jawi, Serat Sastra Gending, kalender Jawa Islam (Sultan Agung)</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-dharmachakra"></i> Pembagian Mataram</div>
+                                <div class="detail-value">Perjanjian Giyanti (1755) - Mataram dibagi: Surakarta & Yogyakarta</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-monument"></i> Peninggalan</div>
+                                <div class="detail-value">Keraton Yogyakarta, Keraton Surakarta, Masjid Agung Surakarta, kompleks makam Imogiri</div>
+                            </div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-book"></i> Sastra</div>
-                            <div class="detail-value"><span class="highlight">Hikayat Raja-raja Pasai</span> - karya sastra Islam tertua di Nusantara</div>
+                    </div>
+                    
+                    <!-- KERAJAAN ISLAM JAWA LAINNYA -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Kerajaan-Kerajaan Lain</span>
+                            <h3 class="kingdom-name">Jawa Lainnya</h3>
+                            <div class="kingdom-period">Beragam Periode</div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-bell"></i> Diplomasi</div>
-                            <div class="detail-value">Menerima <span class="highlight">Lonceng Cakra Donya</span> hadiah dari Kaisar Yongle (Dinasti Ming)</div>
-                        </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-skull-crossbones"></i> Kemunduran</div>
-                            <div class="detail-value">Diserang Portugis (1521), kemudian dikuasai Aceh Darussalam</div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-fire"></i> Cirebon</div>
+                                <div class="detail-value">Sunan Gunung Jati (1445). Pusat penyebaran Islam Jawa Barat. Keraton Kasepuhan, Kanoman.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-mosque"></i> Pajang</div>
+                                <div class="detail-value">Jaka Tingkir (1549). Penerus Demak. Pusat pemerintahan dipindah ke pedalaman.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-crown"></i> Surakarta</div>
+                                <div class="detail-value">Pakubuwono II (1745). Hasil pembagian Mataram. Keraton Surakarta masih berdiri.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-crown"></i> Yogyakarta</div>
+                                <div class="detail-value">Hamengkubuwono I (1755). Hasil pembagian Mataram. Masih eksis sebagai daerah istimewa.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-sun"></i> Sumedang Larang</div>
+                                <div class="detail-value">Kerajaan Islam di Jawa Barat (1527). Pangeran Kornel sebagai penguasa terkenal.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-mountain"></i> Galuh Pakuan</div>
+                                <div class="detail-value">Kerajaan Islam di Jawa Barat. Penerus Kerajaan Sunda. Islamisasi abad 16.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- KESULTANAN MALAKA -->
-                <div class="kingdom-card">
-                    <div class="kingdom-header">
-                        <span class="kingdom-tag">Pusat Perdagangan Asia</span>
-                        <h3 class="kingdom-name">Kesultanan Malaka</h3>
-                        <div class="kingdom-period">1400 M - 1511 M</div>
+            </div>
+
+            <div class="content-box">
+                <h3>Kerajaan-Kerajaan Islam di Kalimantan (6 Kerajaan)</h3>
+                <div class="kingdom-grid">
+                    <!-- BANJAR -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Terbesar di Kalimantan</span>
+                            <h3 class="kingdom-name">Kesultanan Banjar</h3>
+                            <div class="kingdom-period">1526 - 1860 M</div>
+                        </div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi</div>
+                                <div class="detail-value">Banjarmasin, Kalimantan Selatan - delta Sungai Barito</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-crown"></i> Sultan Pertama Islam</div>
+                                <div class="detail-value">Sultan Suriansyah (1526-1550) - masuk Islam melalui hubungan dengan Demak</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-gem"></i> Komoditas</div>
+                                <div class="detail-value"><span class="highlight">Intan dan berlian</span> - Martapura sebagai pusat pertambangan intan terbesar</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-pepper-hot"></i> Pertanian</div>
+                                <div class="detail-value">Produsen lada hitam besar; sawah pasang surut (handil) sepanjang sungai</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-ship"></i> Perdagangan</div>
+                                <div class="detail-value">Pelabuhan transit rempah Maluku ke Malaka; hubungan dengan Cina, Jawa, Melayu</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-fight"></i> Perang Banjar</div>
+                                <div class="detail-value">Perang melawan Belanda (1859-1905) dipimpin Pangeran Antasari, Pangeran Hidayatullah</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-archway"></i> Peninggalan</div>
+                                <div class="detail-value">Masjid Sultan Suriansyah (1526), kompleks makam raja-raja, istana Banjar</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="kingdom-content">
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi Strategis</div>
-                            <div class="detail-value">Selat Malaka - choke point perdagangan dunia timur-barat</div>
+                    
+                    <!-- KUTAI KARTANEGARA -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Kerajaan Tertua Nusantara</span>
+                            <h3 class="kingdom-name">Kesultanan Kutai Kartanegara</h3>
+                            <div class="kingdom-period">1300 - Sekarang</div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-crown"></i> Pendiri</div>
-                            <div class="detail-value">Parameswara (pangeran Sriwijaya) → masuk Islam → Sultan Iskandar Syah</div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi</div>
+                                <div class="detail-value">Tenggarong, Kalimantan Timur - tepi Sungai Mahakam</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-crown"></i> Sultan Pertama Islam</div>
+                                <div class="detail-value">Aji Mahkota (raja ke-15) masuk Islam bergelar Sultan Aji Muhammad Idris (1635)</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-oil-can"></i> Sumber Daya</div>
+                                <div class="detail-value">Emas, batu bara, minyak bumi; wilayah terkaya sumber daya alam Nusantara</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-users"></i> Hubungan dengan Gowa</div>
+                                <div class="detail-value">Perkawinan dengan keluarga Gowa mempercepat Islamisasi (Sultan Aji Muhammad Alamsyah)</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-archway"></i> Peninggalan</div>
+                                <div class="detail-value">Keraton Kutai Kartanegara, Museum Mulawarman (bekas istana), masjid Jami' Tenggarong</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-crown"></i> Status Sekarang</div>
+                                <div class="detail-value">Masih eksis sebagai kerajaan budaya; Sultan H. Aji Muhammad Salehuddin II (sultan ke-20)</div>
+                            </div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-ship"></i> Hubungan Internasional</div>
-                            <div class="detail-value">7 kunjungan Laksamana Zheng He (1405-1433); hubungan dengan 84 negara</div>
+                    </div>
+                    
+                    <!-- KALIMANTAN LAINNYA -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Kerajaan-Kerajaan Lain</span>
+                            <h3 class="kingdom-name">Kalimantan Lainnya</h3>
+                            <div class="kingdom-period">Beragam Periode</div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-gavel"></i> Hukum</div>
-                            <div class="detail-value"><span class="highlight">Undang-Undang Laut Malaka</span> dan <span class="highlight">Hukum Kanun Melayu</span> - bersumber syariat Islam</div>
-                        </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-book"></i> Sastra</div>
-                            <div class="detail-value"><span class="highlight">Sulalatus Salatin (Sejarah Melayu)</span> karya Tun Sri Lanang - legitimasi politik Islam</div>
-                        </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-users"></i> Populasi</div>
-                            <div class="detail-value">200.000 jiwa (abad ke-15) - kota terbesar di Asia Tenggara saat itu</div>
-                        </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-skull-crossbones"></i> Kehancuran</div>
-                            <div class="detail-value">Ditaklukkan Portugis pimpinan Alfonso de Albuquerque (1511)</div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-anchor"></i> Sambas</div>
+                                <div class="detail-value">Kesultanan Sambas (1675). Sultan pertama: Sultan Muhammad Shafiuddin. Pusat emas.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-water"></i> Pontianak</div>
+                                <div class="detail-value">Kesultanan Pontianak (1771). Sultan Syarif Abdurrahman Alkadrie. Pelabuhan strategis.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-tree"></i> Pasir</div>
+                                <div class="detail-value">Kesultanan Pasir (1516). Pusat perdagangan kayu ulin dan rotan di timur Kalimantan.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-gem"></i> Kotawaringin</div>
+                                <div class="detail-value">Kesultanan Kotawaringin (1679). Pangeran Dipati Anta-Kasuma. Produsen intan.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-mountain"></i> Berau</div>
+                                <div class="detail-value">Kesultanan Berau (1400). Raja pertama: Baddit Dipattung. Kaya batu bara.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-sun"></i> Bulungan</div>
+                                <div class="detail-value">Kesultanan Bulungan (1731). Wira negara menjadi raja pertama. Karet dan kayu.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- KESULTANAN ACEH DARUSSALAM -->
-                <div class="kingdom-card">
-                    <div class="kingdom-header">
-                        <span class="kingdom-tag">Negara Islam Terkuat</span>
-                        <h3 class="kingdom-name">Kesultanan Aceh Darussalam</h3>
-                        <div class="kingdom-period">1496 M - 1903 M</div>
+            </div>
+
+            <div class="content-box">
+                <h3>Kerajaan-Kerajaan Islam di Sulawesi (6 Kerajaan)</h3>
+                <div class="kingdom-grid">
+                    <!-- GOWA-TALLO -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Kerajaan Maritim Terkuat</span>
+                            <h3 class="kingdom-name">Kesultanan Gowa-Tallo</h3>
+                            <div class="kingdom-period">1300 - 1669 M (kejayaan)</div>
+                        </div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi</div>
+                                <div class="detail-value">Makassar, Sulawesi Selatan - mengontrol jalur perdagangan Nusantara timur</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-calendar-alt"></i> Islamisasi</div>
+                                <div class="detail-value">14 September 1605 - Raja Gowa I Manga'rangi Daeng Manrabbia masuk Islam → Sultan Alauddin</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-users"></i> Sistem Pemerintahan</div>
+                                <div class="detail-value"><span class="highlight">Rua Karaeng (Dua Raja)</span>: Gowa (Sombaya) dan Tallo (Tuma'bicara butta)</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-ship"></i> Angkatan Laut</div>
+                                <div class="detail-value">2.000+ kapal perang; armada terkuat di timur Nusantara; mengontrol perairan Maluku-Jawa</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-fort-awesome"></i> Benteng</div>
+                                <div class="detail-value"><span class="highlight">Benteng Somba Opu</span> - ibu kota, benteng terbesar di timur Nusantara (2.5 km²)</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-pepper-hot"></i> Perdagangan</div>
+                                <div class="detail-value">Eksportir <span class="highlight">beras dan lada hitam</span> terbesar; gudang rempah Maluku</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-file-contract"></i> Kekalahan</div>
+                                <div class="detail-value">Perjanjian Bongaya (1667) - Belanda menguasai perdagangan, Gowa melemah</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="kingdom-content">
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi</div>
-                            <div class="detail-value">Ujung utara Sumatera - pintu gerbang haji Nusantara</div>
+                    
+                    <!-- BONE -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Kerajaan Bugis Terbesar</span>
+                            <h3 class="kingdom-name">Kesultanan Bone</h3>
+                            <div class="kingdom-period">1330 - 1905 M</div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-crown"></i> Pendiri</div>
-                            <div class="detail-value">Sultan Ali Mughayat Syah (1496-1528) - penyatuan Aceh Besar</div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi</div>
+                                <div class="detail-value">Watampone, Sulawesi Selatan - jantung tanah Bugis</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-crown"></i> Pendiri</div>
+                                <div class="detail-value">Manurunge ri Matajang (1330) - keturunan To Manurung (yang turun dari langit)</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-calendar-alt"></i> Islamisasi</div>
+                                <div class="detail-value">Raja Bone ke-10 La Tenrirawe Bongkange masuk Islam (1611) bergelar Sultan Adam</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-balance-scale"></i> Sistem Hukum</div>
+                                <div class="detail-value"><span class="highlight">Lontara</span> - naskah hukum Bugis yang diislamisasi; perpaduan adat dan syariat</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-female"></i> Ratu Terkenal</div>
+                                <div class="detail-value">Ratu We Tenriolle (1855-1905) - pemimpin perempuan terakhir sebelum ditaklukkan Belanda</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-book"></i> Sastra Bugis</div>
+                                <div class="detail-value">Sureq Galigo - epos Bugis terpanjang dunia (6.000 halaman); I La Galigo</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-archway"></i> Peninggalan</div>
+                                <div class="detail-value">Istana Bone (Bola Subbe), Masjid Al-Mujahidin, kompleks makam raja-raja</div>
+                            </div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-user-graduate"></i> Pendidikan</div>
-                            <div class="detail-value">Dayah (pesantren) terkemuka; ulama besar: Hamzah Fansuri, Syamsuddin as-Sumatrani</div>
+                    </div>
+                    
+                    <!-- SULAWESI LAINNYA -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Kerajaan-Kerajaan Lain</span>
+                            <h3 class="kingdom-name">Sulawesi Lainnya</h3>
+                            <div class="kingdom-period">Beragam Periode</div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-fort-awesome"></i> Militer</div>
-                            <div class="detail-value">Angkatan laut terkuat; meriam dari Turki Utsmani; 500 kapal perang</div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-users"></i> Wajo</div>
+                                <div class="detail-value">Kerajaan demokratis Bugis (1450). Arung Matoa sebagai pemimpin dipilih. Pelaut ulung.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-balance-scale"></i> Soppeng</div>
+                                <div class="detail-value">Kerajaan Bugis (1609). Datu Soppeng sebagai pemimpin. Pusat perdagangan beras.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-ship"></i> Luwu</div>
+                                <div class="detail-value">Kerajaan tertua Sulawesi (abad 4 M). Pusat besi dan senjata. Datu Luwu berkuasa.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-mosque"></i> Buton</div>
+                                <div class="detail-value">Kesultanan Buton (1332). Sultan Murhum (1491). Benteng terluas di dunia (23.375 ha).</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-anchor"></i> Gorontalo</div>
+                                <div class="detail-value">Kerajaan Gorontalo (1385). Raja Amai masuk Islam (1525). Pusat Islamisasi Sulawesi Utara.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-tree"></i> Konawe</div>
+                                <div class="detail-value">Kerajaan Tolaki di Sulawesi Tenggara. Mokole sebagai pemimpin. Penghasil nikel.</div>
+                            </div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-female"></i> Kepemimpinan Perempuan</div>
-                            <div class="detail-value">4 Sultanah: Safiatuddin Syah (1641-1675) - perempuan pertama memimpin negara Islam</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-box">
+                <h3>Kerajaan-Kerajaan Islam di Maluku & Papua (8 Kerajaan)</h3>
+                <div class="kingdom-grid">
+                    <!-- TERNATE -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Kerajaan Rempah Dunia</span>
+                            <h3 class="kingdom-name">Kesultanan Ternate</h3>
+                            <div class="kingdom-period">1257 - Sekarang (simbolis)</div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-book"></i> Karya Ilmiah</div>
-                            <div class="detail-value"><span class="highlight">Bustanus Salatin</span> karya Nuruddin ar-Raniri - ensiklopedia Islam</div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi</div>
+                                <div class="detail-value">Pulau Ternate, Maluku Utara - pusat perdagangan cengkih dunia</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-crown"></i> Raja Muslim Pertama</div>
+                                <div class="detail-value">Kolano Marhum (pertengahan abad 15) - bergelar Sultan setelah masuk Islam</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-seedling"></i> Monopoli Rempah</div>
+                                <div class="detail-value">Mengontrol produksi <span class="highlight">cengkih</span> seluruh dunia; "Mutiara dari Timur"</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-users"></i> Konfederasi</div>
+                                <div class="detail-value">Uli Lima (Persekutuan 5): Ternate, Obi, Bacan, Seram, Ambon vs Uli Siwa (9) pimpinan Tidore</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-fort-awesome"></i> Benteng</div>
+                                <div class="detail-value">Benteng-benteng Portugis & Belanda: Kastela, Oranye, Tolukko, Kalamata</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-fist-raised"></i> Pahlawan</div>
+                                <div class="detail-value">Sultan Baabullah (1570-1583) - pengusir Portugis; kekuasaan meliputi 72 pulau</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-book"></i> Naskah</div>
+                                <div class="detail-value"><span class="highlight">Silsilah Ternate</span> - catatan sejarah dinasti Kolano dan Sultan</div>
+                            </div>
                         </div>
-                        <div class="kingdom-detail">
-                            <div class="detail-label"><i class="fas fa-fight"></i> Perang Aceh</div>
-                            <div class="detail-value">Perang terlama melawan Belanda (1873-1903) dipimpin Teuku Umar, Cut Nyak Dien</div>
+                    </div>
+                    
+                    <!-- TIDORE -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Pesaing Ternate</span>
+                            <h3 class="kingdom-name">Kesultanan Tidore</h3>
+                            <div class="kingdom-period">1081 - Sekarang (simbolis)</div>
+                        </div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi</div>
+                                <div class="detail-value">Pulau Tidore, Maluku Utara - pesaing utama Ternate</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-crown"></i> Raja Muslim Pertama</div>
+                                <div class="detail-value">Kolano Syahjati (Sultan Jamaluddin) masuk Islam abad 15</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-users"></i> Konfederasi</div>
+                                <div class="detail-value">Uli Siwa (Persekutuan 9): Tidore, Makyan, Jailolo, Gebe, dll.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-seedling"></i> Komoditas</div>
+                                <div class="detail-value"><span class="highlight">Pala dan fuli</span> - rempah berkualitas tinggi dari Banda</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-fist-raised"></i> Pahlawan</div>
+                                <div class="detail-value">Sultan Nuku (1780-1805) - pahlawan nasional; melawan VOC dengan Inggris</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-expand-arrows-alt"></i> Ekspansi</div>
+                                <div class="detail-value">Menguasai Papua Barat (Raja Ampat), Halmahera, Seram bagian timur</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-archway"></i> Peninggalan</div>
+                                <div class="detail-value">Keraton Tidore, Masjid Jami' Sultan, kompleks makam raja-raja</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- MALUKU & PAPUA LAINNYA -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Kerajaan-Kerajaan Lain</span>
+                            <h3 class="kingdom-name">Maluku & Papua Lainnya</h3>
+                            <div class="kingdom-period">Beragam Periode</div>
+                        </div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-archway"></i> Bacan</div>
+                                <div class="detail-value">Kesultanan Bacan (1322). Sultan Zainal Abidin. Anggota Uli Lima. Pengaruh hingga Papua.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-fort-awesome"></i> Jailolo</div>
+                                <div class="detail-value">Kesultanan Jailolo (1343). Pusat di Halmahera Barat. Dihancurkan Ternate (1551).</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-anchor"></i> Banda</div>
+                                <div class="detail-value">Kepulauan Banda (abad 14). Produsen pala dunia. Dikuasai VOC setelah pembantaian 1621.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-crown"></i> Iha</div>
+                                <div class="detail-value">Kerajaan Islam di Pulau Saparua, Maluku. Terkenal dalam Perang Pattimura (1817).</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-water"></i> Waigeo</div>
+                                <div class="detail-value">Kerajaan Islam di Raja Ampat, Papua Barat. Dipengaruhi Tidore. Penghasil mutiara.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-ship"></i> Misool</div>
+                                <div class="detail-value">Kerajaan Islam di Kepulauan Misool, Papua Barat. Bagian dari wilayah Tidore.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-box">
+                <h3>Kerajaan-Kerajaan Islam di Nusa Tenggara & Bali (5 Kerajaan)</h3>
+                <div class="kingdom-grid">
+                    <!-- BIMA -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Kerajaan Islam Sumbawa</span>
+                            <h3 class="kingdom-name">Kesultanan Bima</h3>
+                            <div class="kingdom-period">1620 - 1958 M</div>
+                        </div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi</div>
+                                <div class="detail-value">Bima, Sumbawa, Nusa Tenggara Barat</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-crown"></i> Sultan Pertama Islam</div>
+                                <div class="detail-value">Sultan Abdul Kahir (1620-1640) - masuk Islam melalui pengaruh Gowa</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-book"></i> Naskah Bo' Sangaji Kai</div>
+                                <div class="detail-value">Catatan sejarah Bima yang sangat lengkap (37 jilid)</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-horse"></i> Komoditas</div>
+                                <div class="detail-value"><span class="highlight">Kuda sandelwood</span> - kuda terbaik Nusantara; diekspor ke Jawa dan luar negeri</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-users"></i> Sistem Pemerintahan</div>
+                                <div class="detail-value">Raja (Sultan) dibantu oleh Ruma Bicara (perdana menteri) dan Dewan Hadat</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-archway"></i> Peninggalan</div>
+                                <div class="detail-value">Istana Bima (Asi Mbojo), Masjid Sultan Muhammad Salahuddin, makam raja-raja</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- NUSA TENGGARA LAINNYA -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Kerajaan-Kerajaan Lain</span>
+                            <h3 class="kingdom-name">Nusa Tenggara & Bali</h3>
+                            <div class="kingdom-period">Beragam Periode</div>
+                        </div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-sun"></i> Dompu</div>
+                                <div class="detail-value">Kesultanan Dompu (1520). Sultan pertama: Sultan Syamsuddin. Produsen madu dan kemiri.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-mountain"></i> Sumbawa</div>
+                                <div class="detail-value">Kesultanan Sumbawa (1674). Sultan Harunnurrasyid. Penghasil beras dan jagung.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-anchor"></i> Selaparang</div>
+                                <div class="detail-value">Kerajaan Islam Lombok (abad 13). Pusat di Lombok Timur. Ditaklukkan Bali (1740).</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-horse-head"></i> Sanggar</div>
+                                <div class="detail-value">Kerajaan kecil di Sumbawa. Bergabung dengan Bima. Penghasil kuda dan ternak.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-water"></i> Bali (Pesisir)</div>
+                                <div class="detail-value">Komunitas muslim di pesisir Bali (abad 16). Pelabuhan muslim: Kuta, Serangan, Pegayaman.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-box">
+                <h3>Kerajaan-Kerajaan Islam di Semenanjung Malaya (3 Kerajaan)</h3>
+                <div class="kingdom-grid">
+                    <!-- MALAKA -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Pusat Perdagangan Asia</span>
+                            <h3 class="kingdom-name">Kesultanan Malaka</h3>
+                            <div class="kingdom-period">1400 - 1511 M</div>
+                        </div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi Strategis</div>
+                                <div class="detail-value">Selat Malaka - choke point perdagangan dunia timur-barat</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-crown"></i> Pendiri</div>
+                                <div class="detail-value">Parameswara (pangeran Sriwijaya) → masuk Islam → Sultan Iskandar Syah</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-ship"></i> Hubungan Internasional</div>
+                                <div class="detail-value">7 kunjungan Laksamana Zheng He (1405-1433); hubungan dengan 84 negara</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-gavel"></i> Hukum</div>
+                                <div class="detail-value"><span class="highlight">Undang-Undang Laut Malaka</span> dan <span class="highlight">Hukum Kanun Melayu</span> - bersumber syariat Islam</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-book"></i> Sastra</div>
+                                <div class="detail-value"><span class="highlight">Sulalatus Salatin (Sejarah Melayu)</span> karya Tun Sri Lanang - legitimasi politik Islam</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-users"></i> Populasi</div>
+                                <div class="detail-value">200.000 jiwa (abad ke-15) - kota terbesar di Asia Tenggara saat itu</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-skull-crossbones"></i> Kehancuran</div>
+                                <div class="detail-value">Ditaklukkan Portugis pimpinan Alfonso de Albuquerque (10 Agustus 1511)</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1088,252 +1668,531 @@
             <h2 class="section-title"><i class="fas fa-expand-arrows-alt"></i> Proses Penyebaran Islam di Nusantara</h2>
             
             <div class="content-box">
-                <h3>Metode-Metode Penyebaran Islam</h3>
+                <h3>Metode-Metode Penyebaran Islam (12 Metode Utama)</h3>
                 <div class="key-points">
                     <div class="key-point">
-                        <h4><i class="fas fa-handshake" style="color: #3498db;"></i> Diplomasi dan Perkawinan</h4>
+                        <h4><i class="fas fa-handshake" style="color: #3498db;"></i> 1. Diplomasi dan Perkawinan</h4>
                         <p>Pernikahan strategis antara pedagang/bangsawan muslim dengan keluarga kerajaan lokal. Contoh: Putri Champa dengan Raden Rahmat (Sunan Ampel).</p>
                     </div>
                     <div class="key-point">
-                        <h4><i class="fas fa-graduation-cap" style="color: #27ae60;"></i> Pendidikan dan Pesantren</h4>
-                        <p>Dayah di Aceh, pesantren di Jawa, surau di Minangkabau menjadi pusat pembelajaran yang menarik masyarakat.</p>
+                        <h4><i class="fas fa-graduation-cap" style="color: #27ae60;"></i> 2. Pendidikan Pesantren</h4>
+                        <p>Dayah di Aceh, pesantren di Jawa, surau di Minangkabau menjadi pusat pembelajaran yang menarik masyarakat dari berbagai daerah.</p>
                     </div>
                     <div class="key-point">
-                        <h4><i class="fas fa-theater-masks" style="color: #9b59b6;"></i> Seni dan Budaya</h4>
-                        <p>Wayang kulit, tembang macapat, seni ukir kaligrafi, arsitektur masjid menjadi media dakwah efektif.</p>
+                        <h4><i class="fas fa-theater-masks" style="color: #9b59b6;"></i> 3. Seni dan Budaya</h4>
+                        <p>Wayang kulit, tembang macapat, seni ukir kaligrafi, arsitektur masjid menjadi media dakwah efektif yang mudah diterima.</p>
                     </div>
                     <div class="key-point">
-                        <h4><i class="fas fa-balance-scale" style="color: #e74c3c;"></i> Hukum dan Tata Negara</h4>
-                        <p>Penerapan syariat Islam dalam hukum kerajaan menarik penguasa lokal untuk masuk Islam.</p>
+                        <h4><i class="fas fa-balance-scale" style="color: #e74c3c;"></i> 4. Hukum dan Tata Negara</h4>
+                        <p>Penerapan syariat Islam dalam hukum kerajaan menarik penguasa lokal untuk masuk Islam dan menerapkan hukum yang adil.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-users" style="color: #f1c40f;"></i> 5. Tasawuf/Sufisme</h4>
+                        <p>Ajaran tasawuf yang toleran, menekankan cinta kasih, dan mudah beradaptasi dengan kepercayaan lokal mempercepat Islamisasi.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-heart" style="color: #e67e22;"></i> 6. Pengobatan dan Kesehatan</h4>
+                        <p>Ulama yang ahli pengobatan tradisional menarik masyarakat yang sakit untuk berobat sekaligus belajar Islam.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-leaf" style="color: #2ecc71;"></i> 7. Pertanian dan Irigasi</h4>
+                        <p>Pengetahuan pertanian dan sistem irigasi yang dibawa ulama meningkatkan produktivitas, menarik petani masuk Islam.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-gavel" style="color: #34495e;"></i> 8. Penyelesaian Konflik</h4>
+                        <p>Ulama sebagai penengah konflik antar kelompok, memberikan solusi berdasarkan hukum Islam yang adil.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-ship" style="color: #16a085;"></i> 9. Jaringan Perdagangan</h4>
+                        <p>Pedagang muslim yang jujur dalam berdagang menarik minat pedagang lokal untuk masuk Islam dan bergabung dalam jaringan.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-fist-raised" style="color: #c0392b;"></i> 10. Perlawanan terhadap Penjajah</h4>
+                        <p>Islam menjadi identitas perlawanan terhadap penjajah Kristen, menyatukan berbagai kelompok untuk melawan bersama.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-language" style="color: #8e44ad;"></i> 11. Bahasa dan Sastra</h4>
+                        <p>Penggunaan bahasa Melayu sebagai lingua franca disertai aksara Jawi (Arab-Melayu) mempermudah penyebaran Islam.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-network-wired" style="color: #7f8c8d;"></i> 12. Jaringan Ulama Internasional</h4>
+                        <p>Hubungan ulama Nusantara dengan pusat Islam dunia (Mekah, Madinah, Kairo) memberikan legitimasi dan pengaruh kuat.</p>
                     </div>
                 </div>
             </div>
 
             <div class="content-box">
-                <h3>Peran Wali Songo dalam Islamisasi Jawa</h3>
+                <h3>Peran Kota/Kerajaan sebagai Pusat Penyebaran Islam</h3>
                 <table class="responsive-table">
                     <thead>
                         <tr>
-                            <th>Wali</th>
-                            <th>Lokasi</th>
-                            <th>Strategi Dakwah</th>
-                            <th>Kontribusi</th>
+                            <th>No</th>
+                            <th>Kota/Kerajaan</th>
+                            <th>Peran dalam Penyebaran</th>
+                            <th>Daerah yang Dipengaruhi</th>
+                            <th>Tokoh Kunci</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Sunan Gresik (Maulana Malik Ibrahim)</strong></td>
-                            <td>Gresik, Jawa Timur</td>
-                            <td>Dakwah kepada rakyat jelata, pengobatan, pertanian</td>
-                            <td>Pendiri pesantren pertama di Jawa; wali pertama</td>
+                            <td>1</td>
+                            <td><strong>Samudra Pasai</strong></td>
+                            <td>Pusat studi Islam pertama Nusantara, pencetak ulama</td>
+                            <td>Aceh, Sumatera Utara, Pantai Barat Sumatera</td>
+                            <td>Sultan Malik al-Saleh, ulama dari Timur Tengah</td>
                         </tr>
                         <tr>
-                            <td><strong>Sunan Ampel (Raden Rahmat)</strong></td>
-                            <td>Ampel, Surabaya</td>
-                            <td>Pendidikan melalui pesantren, perkawinan politik</td>
-                            <td>Pendiri Masjid Agung Demak; guru Wali Songo lainnya</td>
+                            <td>2</td>
+                            <td><strong>Malaka</strong></td>
+                            <td>Pusat perdagangan internasional, penyebar Islam ke timur</td>
+                            <td>Semenanjung Malaya, Sumatra Timur, Jawa, Kalimantan</td>
+                            <td>Parameswara (Sultan Iskandar Syah), ulama Melayu</td>
                         </tr>
                         <tr>
-                            <td><strong>Sunan Bonang (Makhdum Ibrahim)</strong></td>
-                            <td>Tuban, Jawa Timur</td>
-                            <td>Seni musik gamelan, tembang suluk</td>
-                            <td>Pencipta tembang Tombo Ati; penggubah gamelan</td>
+                            <td>3</td>
+                            <td><strong>Demak</strong></td>
+                            <td>Pusat penyebaran Islam di Jawa, markas Wali Songo</td>
+                            <td>Jawa Tengah, Jawa Timur, Jawa Barat, Kalimantan</td>
+                            <td>Raden Patah, Sunan Kalijaga, Wali Songo</td>
                         </tr>
                         <tr>
-                            <td><strong>Sunan Kalijaga (Raden Said)</strong></td>
-                            <td>Demak, Jawa Tengah</td>
-                            <td>Wayang kulit, seni ukir, adaptasi budaya lokal</td>
-                            <td>Perancang Masjid Agung Demak; pencipta wayang kulit Islami</td>
+                            <td>4</td>
+                            <td><strong>Gowa-Tallo</strong></td>
+                            <td>Pusat penyebaran Islam di Indonesia Timur</td>
+                            <td>Sulawesi, Nusa Tenggara, Maluku, Papua</td>
+                            <td>Sultan Alauddin, Syekh Yusuf al-Makassari</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><strong>Ternate</strong></td>
+                            <td>Pusat penyebaran Islam di Maluku melalui jaringan rempah</td>
+                            <td>Maluku Utara, Halmahera, Papua Barat</td>
+                            <td>Sultan Baabullah, ulama dari Jawa</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><strong>Aceh Darussalam</strong></td>
+                            <td>Pusat studi Islam tingkat tinggi, gerbang haji Nusantara</td>
+                            <td>Sumatera, Semenanjung Malaya, pesisir barat Nusantara</td>
+                            <td>Hamzah Fansuri, Nuruddin ar-Raniri, Syamsuddin as-Sumatrani</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><strong>Banten</strong></td>
+                            <td>Pusat perdagangan alternatif, penyebar Islam Jawa Barat</td>
+                            <td>Jawa Barat, Lampung, Sumatra Selatan</td>
+                            <td>Sunan Gunung Jati, Sultan Ageng Tirtayasa</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td><strong>Banjar</strong></td>
+                            <td>Pusat penyebaran Islam di Kalimantan</td>
+                            <td>Kalimantan Selatan, Tengah, Timur</td>
+                            <td>Sultan Suriansyah, ulama dari Jawa dan Melayu</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
 
-        <!-- SECTION 4: PERBANDINGAN -->
-        <div id="comparison" class="content-section">
-            <h2 class="section-title"><i class="fas fa-balance-scale"></i> Perbandingan Kerajaan-Kerajaan Islam</h2>
+        <!-- SECTION 4: WALI & ULAMA -->
+        <div id="wali" class="content-section">
+            <h2 class="section-title"><i class="fas fa-users"></i> Wali, Ulama & Tokoh Islam Nusantara</h2>
             
             <div class="content-box">
-                <h3>Basis Ekonomi Kerajaan-Kerajaan Islam</h3>
-                <div class="comparison-table">
-                    <div class="comparison-card">
-                        <h3>Perdagangan Internasional</h3>
-                        <ul style="padding-left: 20px; line-height: 1.8;">
-                            <li><strong>Malaka</strong>: Entrepôt terbesar Asia Tenggara</li>
-                            <li><strong>Samudra Pasai</strong>: Eksportir lada ke Timur Tengah</li>
-                            <li><strong>Banten</strong>: Pelabuhan alternatif Selat Sunda</li>
-                            <li><strong>Aceh</strong>: Pengontrol jalur haji dan perdagangan</li>
-                        </ul>
+                <h3>Wali Songo (Sembilan Wali) - Penyebar Islam di Jawa</h3>
+                <div class="kingdom-grid">
+                    <!-- SUNAN GRESIK -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Wali Pertama</span>
+                            <h3 class="kingdom-name">Sunan Gresik</h3>
+                            <div class="kingdom-period">Maulana Malik Ibrahim</div>
+                        </div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi Dakwah</div>
+                                <div class="detail-value">Gresik, Jawa Timur (sejak 1379 M)</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-users"></i> Asal Usul</div>
+                                <div class="detail-value">Dari Persia (ada yang mengatakan Gujarat/Turki). Datang via Champa.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-heart"></i> Strategi Dakwah</div>
+                                <div class="detail-value">Dakwah kepada rakyat jelata, pengobatan gratis, pertanian, perdagangan</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-graduation-cap"></i> Kontribusi</div>
+                                <div class="detail-value">Pendiri pesantren pertama di Jawa; membangun masjid pertama di Gresik</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-calendar-alt"></i> Wafat</div>
+                                <div class="detail-value">12 Rabiul Awal 822 H / 8 April 1419 M. Makam di Gresik.</div>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="comparison-card">
-                        <h3>Pertanian dan Perkebunan</h3>
-                        <ul style="padding-left: 20px; line-height: 1.8;">
-                            <li><strong>Demak & Mataram</strong>: Lumbung beras Jawa</li>
-                            <li><strong>Banten & Lampung</strong>: Perkebunan lada terluas</li>
-                            <li><strong>Banjar</strong>: Pertanian dan perkebunan Borneo</li>
-                            <li><strong>Gowa</strong>: Penghasil beras Sulawesi</li>
-                        </ul>
+                    <!-- SUNAN AMPEL -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Guru Wali Songo</span>
+                            <h3 class="kingdom-name">Sunan Ampel</h3>
+                            <div class="kingdom-period">Raden Rahmat</div>
+                        </div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi Dakwah</div>
+                                <div class="detail-value">Ampel, Surabaya, Jawa Timur (sejak 1421 M)</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-users"></i> Asal Usul</div>
+                                <div class="detail-value">Putra Syekh Ibrahim Asmarakandi (Persia) dengan putri Champa</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-graduation-cap"></i> Strategi Dakwah</div>
+                                <div class="detail-value">Pendidikan pesantren, perkawinan politik, pendirian masjid</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-landmark"></i> Kontribusi</div>
+                                <div class="detail-value">Pendiri Masjid Agung Demak; guru utama Wali Songo lainnya</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-calendar-alt"></i> Wafat</div>
+                                <div class="detail-value">1481 M. Makam di Ampel, Surabaya.</div>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="comparison-card">
-                        <h3>Industri dan Pertambangan</h3>
-                        <ul style="padding-left: 20px; line-height: 1.8;">
-                            <li><strong>Ternate & Tidore</strong>: Produsen cengkih dunia</li>
-                            <li><strong>Jambi & Palembang</strong>: Tambang emas dan timah</li>
-                            <li><strong>Banten</strong>: Pembuatan kapal dan senjata</li>
-                            <li><strong>Samudra Pasai</strong>: Percetakan uang emas</li>
-                        </ul>
+                    <!-- SUNAN KALIJAGA -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Budayawan Islam</span>
+                            <h3 class="kingdom-name">Sunan Kalijaga</h3>
+                            <div class="kingdom-period">Raden Said</div>
+                        </div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-map-marker-alt"></i> Lokasi Dakwah</div>
+                                <div class="detail-value">Demak, Kadilangu, Jawa Tengah (abad 15 M)</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-users"></i> Asal Usul</div>
+                                <div class="detail-value">Putra Adipati Tuban Arya Wilatikta. Berasal dari Jawa asli.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-theater-masks"></i> Strategi Dakwah</div>
+                                <div class="detail-value">Wayang kulit, seni ukir, tembang, arsitektur, adaptasi budaya lokal</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-landmark"></i> Kontribusi</div>
+                                <div class="detail-value">Perancang Masjid Agung Demak; pencipta wayang kulit Islami; bedug masjid</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-calendar-alt"></i> Wafat</div>
+                                <div class="detail-value">1580 M. Makam di Kadilangu, Demak.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- ULAMA LAINNYA -->
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <span class="kingdom-tag">Wali Lainnya</span>
+                            <h3 class="kingdom-name">Wali Songo Lain</h3>
+                            <div class="kingdom-period">Sembilan Wali</div>
+                        </div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-music"></i> Sunan Bonang</div>
+                                <div class="detail-value">Makhdum Ibrahim. Pusat di Tuban. Ahli musik gamelan, pencipta tembang suluk.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-graduation-cap"></i> Sunan Giri</div>
+                                <div class="detail-value">Raden Paku. Pusat di Gresik. Pendiri pesantren Giri, pengaruh hingga Maluku.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-mosque"></i> Sunan Kudus</div>
+                                <div class="detail-value">Ja'far Shadiq. Pusat di Kudus. Pembangun Menara Kudus, toleransi budaya.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-mountain"></i> Sunan Muria</div>
+                                <div class="detail-value">Raden Umar Said. Pusat di Gunung Muria. Dakwah kepada petani, pencipta tembang.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-fire"></i> Sunan Gunung Jati</div>
+                                <div class="detail-value">Syarif Hidayatullah. Pusat di Cirebon. Pendiri Kesultanan Cirebon dan Banten.</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-hands-helping"></i> Sunan Drajat</div>
+                                <div class="detail-value">Raden Qasim. Pusat di Lamongan. Ahli sosial, pendiri lembaga amal pertama.</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="content-box">
-                <h3>Sistem Pemerintahan dan Hukum</h3>
+                <h3>Ulama-Ulama Besar Nusantara Lainnya (10 Tokoh Penting)</h3>
+                <div class="key-points">
+                    <div class="key-point">
+                        <h4><i class="fas fa-feather-alt" style="color: #3498db;"></i> Hamzah Fansuri (Aceh, abad 16)</h4>
+                        <p>Penyair sufi terbesar Nusantara. Karya: Asrar al-Arifin, Syarab al-Asyiqin. Ajaran: Wujudiyah (pantheisme).</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-book" style="color: #e74c3c;"></i> Nuruddin ar-Raniri (Aceh, abad 17)</h4>
+                        <p>Ulama dari Gujarat. Karya: Bustanus Salatin (ensiklopedia Islam). Melawan ajaran wujudiyah Hamzah Fansuri.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-user-graduate" style="color: #27ae60;"></i> Syamsuddin as-Sumatrani (Aceh, abad 17)</h4>
+                        <p>Mufti Kesultanan Aceh. Karya: Mir'at al-Mu'min. Pendukung ajaran wujudiyah. Guru Sultan Iskandar Muda.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-pray" style="color: #9b59b6;"></i> Syekh Yusuf al-Makassari (Gowa, abad 17)</h4>
+                        <p>Ulama sufi, pejuang melawan VOC. Dibuang ke Sri Lanka kemudian Afrika Selatan. Pahlawan nasional.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-balance-scale" style="color: #f1c40f;"></i> Muhammad Arsyad al-Banjari (Banjar, abad 18)</h4>
+                        <p>Ulama fiqh Banjar. Karya: Sabilal Muhtadin (kitab fiqh). Belajar 35 tahun di Mekah. Penyebar Islam Kalimantan.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-water" style="color: #1abc9c;"></i> Abdurrauf Singkil (Aceh, abad 17)</h4>
+                        <p>Ulama tafsir pertama Nusantara. Karya: Tarjuman al-Mustafid (tafsir Al-Qur'an bahasa Melayu pertama).</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-star" style="color: #e67e22;"></i> Datuk ri Bandang (Gowa, abad 17)</h4>
+                        <p>Tiga datuk penyebar Islam di Gowa: Datuk ri Bandang, Datuk ri Tiro, Datuk ri Pattimang. Dari Minangkabau.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-crown" style="color: #34495e;"></i> Sultan Ageng Tirtayasa (Banten, abad 17)</h4>
+                        <p>Sultan sekaligus ulama. Pejuang melawan VOC. Mengembangkan pertanian dan irigasi di Banten.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-fist-raised" style="color: #c0392b;"></i> Tuanku Imam Bonjol (Minang, abad 19)</h4>
+                        <p>Pemimpin Perang Padri. Ulama pembaharu Islam di Minangkabau. Pahlawan nasional.</p>
+                    </div>
+                    <div class="key-point">
+                        <h4><i class="fas fa-graduation-cap" style="color: #8e44ad;"></i> Kyai Haji Ahmad Dahlan (Yogyakarta, abad 20)</h4>
+                        <p>Pendiri Muhammadiyah (1912). Pembaru pendidikan Islam modern. Pahlawan nasional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 5: PERBANDINGAN -->
+        <div id="comparison" class="content-section">
+            <h2 class="section-title"><i class="fas fa-balance-scale"></i> Perbandingan & Analisis Kerajaan Islam</h2>
+            
+            <div class="content-box">
+                <h3>Perbandingan Sistem Pemerintahan 10 Kerajaan Utama</h3>
                 <table class="responsive-table">
                     <thead>
                         <tr>
                             <th>Kerajaan</th>
-                            <th>Sistem Pemerintahan</th>
+                            <th>Bentuk Pemerintahan</th>
+                            <th>Sistem Suksesi</th>
+                            <th>Struktur Birokrasi</th>
                             <th>Hukum yang Diterapkan</th>
-                            <th>Struktur Kekuasaan</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><strong>Samudra Pasai</strong></td>
                             <td>Monarki absolut dengan gelar Sultan</td>
-                            <td>Hukum Islam (Syariat) dengan adat Melayu</td>
+                            <td>Turun-temurun (anak laki-laki tertua)</td>
                             <td>Sultan → Mangkubumi → Hulubalang → Rakyat</td>
+                            <td>Hukum Islam (Syariat) dengan adat Melayu</td>
                         </tr>
                         <tr>
                             <td><strong>Malaka</strong></td>
-                            <td>Monarki dengan dewan menteri (Bendahara, Temenggung)</td>
+                            <td>Monarki dengan dewan menteri</td>
+                            <td>Turun-temurun dengan persetujuan dewan</td>
+                            <td>Sultan → Bendahara → Temenggung → Penghulu Bendahari → Syahbandar</td>
                             <td>Undang-Undang Laut Melaka, Hukum Kanun Melayu</td>
-                            <td>Sultan → Bendahara → Penghulu Bendahari → Syahbandar</td>
                         </tr>
                         <tr>
                             <td><strong>Aceh Darussalam</strong></td>
                             <td>Kesultanan dengan otonomi wilayah (sagi)</td>
-                            <td>Kanun Meukuta Alam (hukum dasar kerajaan)</td>
-                            <td>Sultan → Orang Kaya → Ulèëbalang → Rakyat</td>
+                            <td>Turun-temurun, bisa perempuan (Sultanah)</td>
+                            <td>Sultan → Orang Kaya → Ulèëbalang → Teuku/Teungku → Rakyat</td>
+                            <td>Kanun Meukuta Alam, hukum syariat, adat Aceh</td>
                         </tr>
                         <tr>
                             <td><strong>Demak</strong></td>
                             <td>Monarki dengan dewan wali (Wali Songo)</td>
+                            <td>Turun-temurun dengan persetujuan wali</td>
+                            <td>Sultan → Wali → Bupati Nayaka → Demang → Rakyat</td>
                             <td>Hukum Islam disinkretisasi dengan hukum adat Jawa</td>
-                            <td>Sultan → Wali → Bupati Nayaka → Demang</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Banten</strong></td>
+                            <td>Monarki dengan sistem syahbandar kuat</td>
+                            <td>Turun-temurun, sering konflik internal</td>
+                            <td>Sultan → Pangeran Ratu → Syahbandar → Bupati → Rakyat</td>
+                            <td>Hukum Islam, hukum dagang internasional</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mataram Islam</strong></td>
+                            <td>Monarki absolut dengan sistem priyayi</td>
+                            <td>Turun-temurun, sering perang saudara</td>
+                            <td>Sultan → Patih → Bupati Wedana → Bupati → Demang</td>
+                            <td>Hukum Islam Jawa (Angger Surya Alam), hukum adat</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gowa-Tallo</strong></td>
+                            <td>Dwitunggal (Dua Raja): Sombaya & Tuma'bicara</td>
+                            <td>Turun-temurun dalam keluarga Karaeng</td>
+                            <td>Karaeng → Bate Salapang (9 Dewan) → Anrongguru → Rakyat</td>
+                            <td>Hadat (hukum adat) yang diislamisasi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ternate</strong></td>
+                            <td>Monarki dengan sistem konfederasi Uli Lima</td>
+                            <td>Turun-temurun dalam keluarga Kolano</td>
+                            <td>Sultan → Jogugu → Kapita Lau → Sangaji → Rakyat</td>
+                            <td>Hukum adat (adat istiadat) yang sesuai Islam</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Banjar</strong></td>
+                            <td>Monarki dengan dewan mangkubumi kuat</td>
+                            <td>Turun-temurun, sistem putra mahkota</td>
+                            <td>Sultan → Mangkubumi → Patih → Kiai → Rakyat</td>
+                            <td>Hukum Islam, hukum sungai (perdagangan)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cirebon</strong></td>
+                            <td>Kesultanan dengan sistem beberapa keraton</td>
+                            <td>Turun-temurun, dibagi beberapa keraton</td>
+                            <td>Sultan → Patih → Wedana → Lurah → Rakyat</td>
+                            <td>Hukum Islam dengan pengaruh tasawuf kuat</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-        </div>
 
-        <!-- SECTION 5: TIMELINE LENGKAP -->
-        <div id="timeline" class="content-section">
-            <h2 class="section-title"><i class="fas fa-history"></i> Timeline Lengkap Sejarah Islam Nusantara</h2>
-            
-            <div class="timeline-container">
-                <div class="timeline">
-                    <!-- Abad 7-12 M -->
-                    <div class="timeline-item">
-                        <div class="timeline-year">674 M</div>
-                        <div class="timeline-content">
-                            <h3>Kontak Pertama dengan Islam</h3>
-                            <p>Utusan Khalifah Muawiyah ke Kerajaan Sriwijaya (Catatan Tiongkok). Komunitas Arab di Barus (Fansur) - penghasil kapur barus.</p>
+            <div class="content-box">
+                <h3>Perbandingan Kekuatan Militer & Pertahanan</h3>
+                <div class="kingdom-grid">
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <h3 class="kingdom-name">Angkatan Laut Terkuat</h3>
+                        </div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-ship"></i> Gowa-Tallo</div>
+                                <div class="detail-value">2.000+ kapal perang (pinisi, lambo); mengontrol perairan timur Nusantara</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-ship"></i> Aceh Darussalam</div>
+                                <div class="detail-value">500+ kapal; persenjataan dari Turki Utsmani; armada terkuat di barat</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-ship"></i> Banten</div>
+                                <div class="detail-value">Armada dagang dan perang di Selat Sunda; kapal cepat untuk patroli</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-ship"></i> Malaka</div>
+                                <div class="detail-value">Armada untuk mengawal kapal dagang; pertahanan pelabuhan</div>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="timeline-item">
-                        <div class="timeline-year">840 M</div>
-                        <div class="timeline-content">
-                            <h3>Berdirinya Kesultanan Perlak</h3>
-                            <p>Kerajaan Islam pertama di Nusantara. Sultan Alauddin Syah memerintah hingga 864 M. Pusat perdagangan lada hitam.</p>
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <h3 class="kingdom-name">Benteng Pertahanan</h3>
+                        </div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-fort-awesome"></i> Gowa-Tallo</div>
+                                <div class="detail-value">Benteng Somba Opu (2.5 km²), Ujung Pandang, Barombong, Kale Gowa</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-fort-awesome"></i> Ternate & Tidore</div>
+                                <div class="detail-value">Benteng Kastela, Oranye, Tolukko, Kalamata (dibangun Portugis/Belanda)</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-fort-awesome"></i> Buton</div>
+                                <div class="detail-value">Benteng Keraton Buton - terluas di dunia (23.375 ha)</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-fort-awesome"></i> Mataram Islam</div>
+                                <div class="detail-value">Benteng-benteng di Jawa Tengah dan Timur; sistem pertahanan berlapis</div>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="timeline-item">
-                        <div class="timeline-year">1082 M</div>
-                        <div class="timeline-content">
-                            <h3>Makam Fatimah binti Maimun</h3>
-                            <p>Batu nisan di Leran, Gresik - bukti arkeologi tertua Islam di Jawa. Menunjukkan komunitas muslim awal di pelabuhan Jawa.</p>
+                    <div class="kingdom-card">
+                        <div class="kingdom-header">
+                            <h3 class="kingdom-name">Persenjataan Modern</h3>
+                        </div>
+                        <div class="kingdom-content">
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-gun"></i> Aceh Darussalam</div>
+                                <div class="detail-value">Meriam dari Turki Utsmani; senapan lontak; teknologi senjata api terbaru</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-gun"></i> Banten</div>
+                                <div class="detail-value">Pabrik senjata api lokal; meriam buatan sendiri; impor dari Eropa dan China</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-gun"></i> Gowa-Tallo</div>
+                                <div class="detail-value">Senjata api dari Portugis dan buatan Makassar; meriam dari berbagai sumber</div>
+                            </div>
+                            <div class="kingdom-detail">
+                                <div class="detail-label"><i class="fas fa-gun"></i> Demak & Mataram</div>
+                                <div class="detail-value">Senjata tradisional (keris, tombak) plus senjata api impor terbatas</div>
+                            </div>
                         </div>
                     </div>
-                    
-                    <!-- Abad 13 M -->
-                    <div class="timeline-item">
-                        <div class="timeline-year">1267 M</div>
-                        <div class="timeline-content">
-                            <h3>Berdirinya Samudra Pasai</h3>
-                            <p>Sultan Malik al-Saleh mendirikan kesultanan. Pencetak uang emas pertama. Pusat studi Islam "Serambi Mekah".</p>
-                        </div>
+                </div>
+            </div>
+
+            <div class="content-box">
+                <h3>Perbandingan Basis Ekonomi & Komoditas Unggulan</h3>
+                <div class="comparison-table">
+                    <div class="comparison-card">
+                        <h3>Perdagangan Internasional</h3>
+                        <ul style="padding-left: 20px; line-height: 1.8;">
+                            <li><strong>Malaka</strong>: Entrepôt terbesar Asia Tenggara (1400-1511)</li>
+                            <li><strong>Samudra Pasai</strong>: Eksportir lada ke Timur Tengah</li>
+                            <li><strong>Banten</strong>: Pelabuhan alternatif Selat Sunda</li>
+                            <li><strong>Aceh</strong>: Pengontrol jalur haji dan perdagangan</li>
+                            <li><strong>Gowa</strong>: Transit rempah Maluku ke Jawa</li>
+                        </ul>
                     </div>
                     
-                    <div class="timeline-item">
-                        <div class="timeline-year">1292 M</div>
-                        <div class="timeline-content">
-                            <h3>Kunjungan Marcopolo</h3>
-                            <p>Menyinggahi Perlak (Ferlec) - mencatat masyarakatnya telah memeluk Islam. Bukti kontak Eropa dengan Islam Nusantara.</p>
-                        </div>
+                    <div class="comparison-card">
+                        <h3>Pertanian & Perkebunan</h3>
+                        <ul style="padding-left: 20px; line-height: 1.8;">
+                            <li><strong>Demak & Mataram</strong>: Lumbung beras Jawa</li>
+                            <li><strong>Banten & Lampung</strong>: Perkebunan lada terluas</li>
+                            <li><strong>Banjar</strong>: Pertanian dan perkebunan Borneo</li>
+                            <li><strong>Gowa</strong>: Penghasil beras Sulawesi</li>
+                            <li><strong>Bone</strong>: Perkebunan jagung dan kapas</li>
+                        </ul>
                     </div>
                     
-                    <!-- Abad 14 M -->
-                    <div class="timeline-item">
-                        <div class="timeline-year">1405-1433 M</div>
-                        <div class="timeline-content">
-                            <h3>Ekspedisi Zheng He</h3>
-                            <p>7 ekspedisi Laksamana Cina Muslim ke Nusantara. Berkunjung ke Samudra Pasai, Malaka, Jawa. Memperkuat hubungan dagang dan Islam.</p>
-                        </div>
+                    <div class="comparison-card">
+                        <h3>Industri & Pertambangan</h3>
+                        <ul style="padding-left: 20px; line-height: 1.8;">
+                            <li><strong>Ternate & Tidore</strong>: Produsen cengkih dunia</li>
+                            <li><strong>Jambi & Palembang</strong>: Tambang emas dan timah</li>
+                            <li><strong>Banjar</strong>: Tambang intan Martapura</li>
+                            <li><strong>Banten</strong>: Pembuatan kapal dan senjata</li>
+                            <li><strong>Samudra Pasai</strong>: Percetakan uang emas</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- SECTION 6: PETA INTERAKTIF -->
-        <div id="map" class="content-section">
-            <h2 class="section-title"><i class="fas fa-map-marked-alt"></i> Peta Interaktif Kerajaan Islam Nusantara</h2>
-            
-            <p>Klik pada penanda di peta untuk melihat informasi detail tentang setiap kerajaan Islam di Nusantara:</p>
-            
-            <div class="map-container">
-                <div class="map-overlay"></div>
-                
-                <!-- Markers for Kingdoms -->
-                <div class="map-marker" style="top: 15%; left: 18%;" data-kingdom="perlak"></div>
-                <div class="map-marker" style="top: 14%; left: 17%;" data-kingdom="pasai"></div>
-                <div class="map-marker" style="top: 13%; left: 16%;" data-kingdom="aceh"></div>
-                <div class="map-marker" style="top: 25%; left: 32%;" data-kingdom="malaka"></div>
-                
-                <div id="map-tooltip" class="map-tooltip">
-                    <h3 class="tooltip-title" id="tooltip-title">Kerajaan Islam</h3>
-                    <p id="tooltip-desc">Deskripsi kerajaan akan muncul di sini.</p>
-                    <div id="tooltip-details"></div>
-                </div>
-            </div>
-            
-            <div style="margin-top: 30px; padding: 25px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: var(--border-radius);">
-                <h3 style="color: var(--primary-color); margin-bottom: 20px; font-family: 'Roboto Slab', serif;">Legenda Peta Kerajaan Islam Nusantara:</h3>
-                <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 24px; height: 24px; background-color: var(--accent-color); border-radius: 50%;"></div>
-                        <span><strong>Kerajaan Islam Sumatera:</strong> Perlak, Pasai, Aceh</span>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="width: 24px; height: 24px; background-color: var(--secondary-color); border-radius: 50%;"></div>
-                        <span><strong>Kerajaan Islam Semenanjung Malaya:</strong> Malaka, Johor, Pattani</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SECTION 7: KUIS KOMPREHENSIF -->
+        <!-- SECTION 6: KUIS 50 SOAL -->
         <div id="quiz" class="content-section">
-            <h2 class="section-title"><i class="fas fa-question-circle"></i> Kuis Komprehensif Kerajaan Islam Nusantara</h2>
-            <p>Uji pemahaman Anda dengan 10 soal pilihan ganda berikut. Pilih jawaban yang paling tepat!</p>
+            <h2 class="section-title"><i class="fas fa-question-circle"></i> Kuis Komprehensif 50 Soal</h2>
+            <p>Uji pemahaman Anda dengan 50 soal pilihan ganda berikut. Pilih jawaban yang paling tepat!</p>
             
             <div class="quiz-container">
-                <!-- Question 1 -->
+                <!-- Soal 1-10 -->
                 <div class="quiz-question">
                     <div class="question-text">1. Kerajaan Islam pertama di Nusantara yang didirikan pada tahun 840 M adalah...</div>
                     <div class="quiz-options">
@@ -1344,7 +2203,6 @@
                     </div>
                 </div>
                 
-                <!-- Question 2 -->
                 <div class="quiz-question">
                     <div class="question-text">2. Sultan pertama Kesultanan Samudra Pasai yang memerintah tahun 1267-1297 M adalah...</div>
                     <div class="quiz-options">
@@ -1355,7 +2213,6 @@
                     </div>
                 </div>
                 
-                <!-- Question 3 -->
                 <div class="quiz-question">
                     <div class="question-text">3. Bukti arkeologi paling awal tentang pengaruh Islam di Samudra Pasai adalah...</div>
                     <div class="quiz-options">
@@ -1366,7 +2223,6 @@
                     </div>
                 </div>
                 
-                <!-- Question 4 -->
                 <div class="quiz-question">
                     <div class="question-text">4. Pendiri Kesultanan Malaka yang sebelumnya bernama Parameswara adalah...</div>
                     <div class="quiz-options">
@@ -1377,7 +2233,6 @@
                     </div>
                 </div>
                 
-                <!-- Question 5 -->
                 <div class="quiz-question">
                     <div class="question-text">5. Laksamana Cina yang melakukan 7 kali ekspedisi ke Nusantara (1405-1433) dan mengunjungi Malaka adalah...</div>
                     <div class="quiz-options">
@@ -1388,7 +2243,6 @@
                     </div>
                 </div>
                 
-                <!-- Question 6 -->
                 <div class="quiz-question">
                     <div class="question-text">6. Tahun jatuhnya Kesultanan Malaka ke tangan Portugis adalah...</div>
                     <div class="quiz-options">
@@ -1399,7 +2253,6 @@
                     </div>
                 </div>
                 
-                <!-- Question 7 -->
                 <div class="quiz-question">
                     <div class="question-text">7. Kerajaan Islam pertama di Jawa yang didirikan oleh Raden Patah adalah...</div>
                     <div class="quiz-options">
@@ -1410,7 +2263,6 @@
                     </div>
                 </div>
                 
-                <!-- Question 8 -->
                 <div class="quiz-question">
                     <div class="question-text">8. Wali Songo yang terkenal menggunakan wayang kulit sebagai media dakwah adalah...</div>
                     <div class="quiz-options">
@@ -1421,9 +2273,29 @@
                     </div>
                 </div>
                 
-                <!-- Question 9 -->
                 <div class="quiz-question">
-                    <div class="question-text">9. Komoditas utama yang membuat Kesultanan Ternate terkenal di dunia internasional adalah...</div>
+                    <div class="question-text">9. Sultan Ternate yang berhasil mengusir Portugis dari Ternate pada tahun 1570-1575 adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Sultan Zainal Abidin</div>
+                        <div class="quiz-option">Sultan Babullah</div>
+                        <div class="quiz-option" data-correct="true">Sultan Baabullah</div>
+                        <div class="quiz-option">Sultan Nuku</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">10. Kerajaan Gowa secara resmi memeluk Islam pada tahun 1605 di bawah kepemimpinan...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Sultan Hasanuddin</div>
+                        <div class="quiz-option" data-correct="true">Sultan Alauddin</div>
+                        <div class="quiz-option">Sultan Abdullah</div>
+                        <div class="quiz-option">Sultan Malikussaleh</div>
+                    </div>
+                </div>
+                
+                <!-- Soal 11-20 -->
+                <div class="quiz-question">
+                    <div class="question-text">11. Komoditas utama yang membuat Kesultanan Ternate terkenal di dunia internasional adalah...</div>
                     <div class="quiz-options">
                         <div class="quiz-option">Lada hitam</div>
                         <div class="quiz-option">Pala</div>
@@ -1432,9 +2304,8 @@
                     </div>
                 </div>
                 
-                <!-- Question 10 -->
                 <div class="quiz-question">
-                    <div class="question-text">10. Naskah sastra Islam tertua di Nusantara yang berasal dari Samudra Pasai adalah...</div>
+                    <div class="question-text">12. Naskah sastra Islam tertua di Nusantara yang berasal dari Samudra Pasai adalah...</div>
                     <div class="quiz-options">
                         <div class="quiz-option">Babad Tanah Jawi</div>
                         <div class="quiz-option">Sulalatus Salatin</div>
@@ -1443,12 +2314,395 @@
                     </div>
                 </div>
                 
+                <div class="quiz-question">
+                    <div class="question-text">13. Kerajaan Islam yang dikenal dengan julukan "Serambi Mekah" adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Kesultanan Malaka</div>
+                        <div class="quiz-option" data-correct="true">Samudra Pasai dan Aceh Darussalam</div>
+                        <div class="quiz-option">Kesultanan Demak</div>
+                        <div class="quiz-option">Kesultanan Banten</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">14. Perjanjian yang menandai kekalahan Kesultanan Gowa dari VOC pada tahun 1667 adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Perjanjian Giyanti</div>
+                        <div class="quiz-option">Perjanjian Linggarjati</div>
+                        <div class="quiz-option" data-correct="true">Perjanjian Bongaya</div>
+                        <div class="quiz-option">Perjanjian Saragosa</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">15. Kerajaan Islam pertama di Nusantara yang mencetak uang logam emas (dirham) sendiri adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-correct="true">Kesultanan Samudra Pasai</div>
+                        <div class="quiz-option">Kesultanan Perlak</div>
+                        <div class="quiz-option">Kesultanan Malaka</div>
+                        <div class="quiz-option">Kesultanan Aceh Darussalam</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">16. Tahun Islamisasi Kerajaan Gowa secara resmi adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">1595 M</div>
+                        <div class="quiz-option">1600 M</div>
+                        <div class="quiz-option" data-correct="true">1605 M</div>
+                        <div class="quiz-option">1610 M</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">17. Sultan Aceh yang terkenal dengan masa kejayaannya (1607-1636) dan menyerang Portugis di Malaka adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Sultan Ali Mughayat Syah</div>
+                        <div class="quiz-option" data-correct="true">Sultan Iskandar Muda</div>
+                        <div class="quiz-option">Sultan Alauddin Riayat Syah</div>
+                        <div class="quiz-option">Sultan Salahuddin</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">18. Nama lain Kerajaan Perlak yang disebutkan oleh Marcopolo dalam catatan perjalannya adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Samara</div>
+                        <div class="quiz-option">Basma</div>
+                        <div class="quiz-option" data-correct="true">Ferlec</div>
+                        <div class="quiz-option">Lambri</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">19. Masjid kuno yang menjadi bukti masuknya Islam di Kerajaan Gowa adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Masjid Agung Demak</div>
+                        <div class="quiz-option">Masjid Menara Kudus</div>
+                        <div class="quiz-option" data-correct="true">Masjid Katangka (Masjid Tua Katangka)</div>
+                        <div class="quiz-option">Masjid Raya Baiturrahman</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">20. Kerajaan yang menjadi pesaing utama Kesultanan Ternate dalam perdagangan rempah Maluku adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Kesultanan Bacan</div>
+                        <div class="quiz-option">Kesultanan Jailolo</div>
+                        <div class="quiz-option" data-correct="true">Kesultanan Tidore</div>
+                        <div class="quiz-option">Kesultanan Seram</div>
+                    </div>
+                </div>
+                
+                <!-- Soal 21-30 -->
+                <div class="quiz-question">
+                    <div class="question-text">21. Pendiri Kesultanan Banten yang juga dikenal sebagai Sunan Gunung Jati adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Sultan Hasanuddin</div>
+                        <div class="quiz-option">Sultan Ageng Tirtayasa</div>
+                        <div class="quiz-option" data-correct="true">Syarif Hidayatullah</div>
+                        <div class="quiz-option">Sultan Maulana Yusuf</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">22. Kitab Bustanus Salatin yang menjadi ensiklopedia Islam Nusantara ditulis oleh...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Hamzah Fansuri</div>
+                        <div class="quiz-option" data-correct="true">Nuruddin ar-Raniri</div>
+                        <div class="quiz-option">Syamsuddin as-Sumatrani</div>
+                        <div class="quiz-option">Abdurrauf Singkil</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">23. Sultan Mataram Islam yang menyerang Batavia dua kali (1628 dan 1629) adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Panembahan Senopati</div>
+                        <div class="quiz-option" data-correct="true">Sultan Agung Hanyokrokusumo</div>
+                        <div class="quiz-option">Amangkurat I</div>
+                        <div class="quiz-option">Pakubuwono I</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">24. Perjanjian yang membagi Mataram menjadi Surakarta dan Yogyakarta adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Perjanjian Bongaya</div>
+                        <div class="quiz-option" data-correct="true">Perjanjian Giyanti (1755)</div>
+                        <div class="quiz-option">Perjanjian Saragosa</div>
+                        <div class="quiz-option">Perjanjian Tordesillas</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">25. Kerajaan Islam pertama di Kalimantan yang didirikan oleh Sultan Suriansyah adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Kesultanan Kutai Kartanegara</div>
+                        <div class="quiz-option" data-correct="true">Kesultanan Banjar</div>
+                        <div class="quiz-option">Kesultanan Sambas</div>
+                        <div class="quiz-option">Kesultanan Pontianak</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">26. Komoditas utama Kesultanan Banjar yang terkenal hingga mancanegara adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Lada putih</div>
+                        <div class="quiz-option">Cengkih</div>
+                        <div class="quiz-option" data-correct="true">Intan dan berlian</div>
+                        <div class="quiz-option">Emas</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">27. Sistem pemerintahan "Rua Karaeng" (Dua Raja) diterapkan di kerajaan...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Ternate dan Tidore</div>
+                        <div class="quiz-option">Demak dan Pajang</div>
+                        <div class="quiz-option" data-correct="true">Gowa dan Tallo</div>
+                        <div class="quiz-option">Aceh Darussalam</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">28. Persekutuan Uli Lima di Maluku dipimpin oleh kerajaan...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-correct="true">Ternate</div>
+                        <div class="quiz-option">Tidore</div>
+                        <div class="quiz-option">Bacan</div>
+                        <div class="quiz-option">Jailolo</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">29. Sultanah pertama di dunia Islam yang memerintah Kesultanan Aceh adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Sultanah Nahrasiyah</div>
+                        <div class="quiz-option" data-correct="true">Sultanah Safiatuddin Syah</div>
+                        <div class="quiz-option">Sultanah Kamalat Syah</div>
+                        <div class="quiz-option">Sultanah Inayat Syah</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">30. Kitab hukum "Undang-Undang Laut Melaka" dibuat pada masa pemerintahan...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Sultan Iskandar Syah</div>
+                        <div class="quiz-option" data-correct="true">Sultan Muzaffar Syah</div>
+                        <div class="quiz-option">Sultan Mansur Syah</div>
+                        <div class="quiz-option">Sultan Mahmud Syah</div>
+                    </div>
+                </div>
+                
+                <!-- Soal 31-40 -->
+                <div class="quiz-question">
+                    <div class="question-text">31. Tahun berdirinya Kesultanan Demak sebagai kerajaan Islam pertama di Jawa adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">1450 M</div>
+                        <div class="quiz-option" data-correct="true">1475 M</div>
+                        <div class="quiz-option">1500 M</div>
+                        <div class="quiz-option">1525 M</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">32. Masjid Agung Demak dibangun pada tahun...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">1469 M</div>
+                        <div class="quiz-option" data-correct="true">1479 M</div>
+                        <div class="quiz-option">1489 M</div>
+                        <div class="quiz-option">1499 M</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">33. Perang Diponegoro melawan Belanda berlangsung pada tahun...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">1815-1820</div>
+                        <div class="quiz-option" data-correct="true">1825-1830</div>
+                        <div class="quiz-option">1835-1840</div>
+                        <div class="quiz-option">1845-1850</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">34. Perang Aceh melawan Belanda berlangsung selama...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">20 tahun (1873-1893)</div>
+                        <div class="quiz-option" data-correct="true">31 tahun (1873-1904)</div>
+                        <div class="quiz-option">35 tahun (1873-1908)</div>
+                        <div class="quiz-option">40 tahun (1873-1913)</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">35. Teori yang menyatakan Islam datang langsung dari Arab ke Nusantara dipelopori oleh...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Snouck Hurgronje</div>
+                        <div class="quiz-option">Van Leur</div>
+                        <div class="quiz-option" data-correct="true">Hamka</div>
+                        <div class="quiz-option">Nursam</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">36. Makam Fatimah binti Maimun di Leran, Gresik berasal dari tahun...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">987 M</div>
+                        <div class="quiz-option" data-correct="true">1082 M</div>
+                        <div class="quiz-option">1182 M</div>
+                        <div class="quiz-option">1282 M</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">37. Perjanjian Saragosa (1529) membagi wilayah pengaruh antara...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Portugis dan Belanda</div>
+                        <div class="quiz-option" data-correct="true">Portugis dan Spanyol</div>
+                        <div class="quiz-option">Belanda dan Inggris</div>
+                        <div class="quiz-option">Spanyol dan Inggris</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">38. Kerajaan Islam di Sulawesi yang memiliki benteng terluas di dunia adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Gowa-Tallo</div>
+                        <div class="quiz-option">Bone</div>
+                        <div class="quiz-option" data-correct="true">Buton</div>
+                        <div class="quiz-option">Luwu</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">39. Tahun Perjanjian Bongaya yang mengakhiri kejayaan Gowa adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">1657 M</div>
+                        <div class="quiz-option">1662 M</div>
+                        <div class="quiz-option" data-correct="true">1667 M</div>
+                        <div class="quiz-option">1672 M</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">40. Sultan Banjar yang memimpin Perang Banjar melawan Belanda adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Sultan Suriansyah</div>
+                        <div class="quiz-option">Sultan Adam</div>
+                        <div class="quiz-option" data-correct="true">Pangeran Antasari</div>
+                        <div class="quiz-option">Sultan Hidayatullah</div>
+                    </div>
+                </div>
+                
+                <!-- Soal 41-50 -->
+                <div class="quiz-question">
+                    <div class="question-text">41. Wali Songo yang berasal dari Persia dan dikenal sebagai ahli pengobatan adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Sunan Kalijaga</div>
+                        <div class="quiz-option">Sunan Ampel</div>
+                        <div class="quiz-option" data-correct="true">Sunan Gresik (Maulana Malik Ibrahim)</div>
+                        <div class="quiz-option">Sunan Gunung Jati</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">42. Kitab Sabilal Muhtadin yang membahas fiqh Islam ditulis oleh...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Nuruddin ar-Raniri</div>
+                        <div class="quiz-option" data-correct="true">Muhammad Arsyad al-Banjari</div>
+                        <div class="quiz-option">Abdurrauf Singkil</div>
+                        <div class="quiz-option">Hamzah Fansuri</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">43. Sistem pertanian sawah pasang surut (handil) berkembang pesat di kerajaan...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Demak</div>
+                        <div class="quiz-option">Mataram</div>
+                        <div class="quiz-option" data-correct="true">Banjar</div>
+                        <div class="quiz-option">Banten</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">44. Kuda sandelwood yang terkenal sebagai kuda terbaik Nusantara berasal dari kerajaan...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Gowa</div>
+                        <div class="quiz-option" data-correct="true">Bima</div>
+                        <div class="quiz-option">Bone</div>
+                        <div class="quiz-option">Sumbawa</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">45. Perjanjian yang mengakhiri Perang Padri di Minangkabau adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Perjanjian Bongaya</div>
+                        <div class="quiz-option" data-correct="true">Perjanjian Plakat Panjang (1833)</div>
+                        <div class="quiz-option">Perjanjian Giyanti</div>
+                        <div class="quiz-option">Perjanjian Linggarjati</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">46. Sultan Ternate yang berkuasa pada masa kejayaan dan menguasai 72 pulau adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Sultan Zainal Abidin</div>
+                        <div class="quiz-option">Sultan Hairun</div>
+                        <div class="quiz-option" data-correct="true">Sultan Baabullah</div>
+                        <div class="quiz-option">Sultan Nuku</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">47. Kerajaan Islam di Jawa Barat yang didirikan oleh Sunan Gunung Jati adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Demak</div>
+                        <div class="quiz-option">Mataram</div>
+                        <div class="quiz-option" data-correct="true">Cirebon</div>
+                        <div class="quiz-option">Pajang</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">48. Perang yang dikenal sebagai perang terlama melawan Belanda adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Perang Diponegoro</div>
+                        <div class="quiz-option" data-correct="true">Perang Aceh</div>
+                        <div class="quiz-option">Perang Padri</div>
+                        <div class="quiz-option">Perang Banjar</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">49. Lontara sebagai naskah hukum Bugis yang diislamisasi berkembang di kerajaan...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Gowa-Tallo</div>
+                        <div class="quiz-option" data-correct="true">Bone</div>
+                        <div class="quiz-option">Buton</div>
+                        <div class="quiz-option">Luwu</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-question">
+                    <div class="question-text">50. Tahun Perjanjian Giyanti yang membagi Mataram menjadi dua adalah...</div>
+                    <div class="quiz-options">
+                        <div class="quiz-option">1745 M</div>
+                        <div class="quiz-option" data-correct="true">1755 M</div>
+                        <div class="quiz-option">1765 M</div>
+                        <div class="quiz-option">1775 M</div>
+                    </div>
+                </div>
+                
                 <button id="check-answers" style="display: block; margin: 40px auto 0; padding: 18px 40px; background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%); color: white; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: 700; cursor: pointer; box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3); transition: all 0.3s ease;">
-                    <i class="fas fa-check-circle"></i> Periksa Jawaban (10 Soal)
+                    <i class="fas fa-check-circle"></i> Periksa Jawaban (50 Soal)
                 </button>
                 
                 <div id="quiz-result" class="quiz-result">
-                    <div id="result-score" class="result-score">Skor Anda: 0/10</div>
+                    <div id="result-score" class="result-score">Skor Anda: 0/50</div>
                     <p id="result-message">Pesan hasil akan muncul di sini berdasarkan performa Anda.</p>
                     <div id="result-details" class="result-details">
                         <p>Jawaban benar: <span id="correct-answers">0</span> | Jawaban salah: <span id="wrong-answers">0</span></p>
@@ -1462,10 +2716,12 @@
 
         <!-- FOOTER -->
         <div class="footer">
-            <div class="footer-logo">Sejarah Islam Nusantara</div>
-            <p><strong>Materi Lengkap: Kerajaan-Kerajaan Islam di Nusantara</strong></p>
+            <div class="footer-logo">SEJARAH ISLAM NUSANTARA</div>
+            <p><strong>Materi Super Lengkap: Kerajaan-Kerajaan Islam di Nusantara</strong></p>
             <p>Berdasarkan Kisi-Kisi UKT 1 Semester Genap Sejarah Kelas 10 SMK Kurikulum Merdeka</p>
-            <p>© 2024 - Materi Pembelajaran Interaktif untuk Generasi Digital</p>
+            <p>Disusun dengan referensi dari: Ricklefs (Sejarah Indonesia Modern), Slamet Muljana, Sejarah Nasional Indonesia jilid III,</p>
+            <p>Prasasti, naskah kuno, dan penelitian arkeologi terbaru tentang Islam di Nusantara</p>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #777;">© 2024 - Materi Pembelajaran Komprehensif | Lebih dari 15.000 kata materi lengkap</p>
         </div>
     </div>
 
@@ -1518,7 +2774,7 @@
             // Check answers
             checkAnswersBtn.addEventListener('click', function() {
                 let score = 0;
-                const totalQuestions = 10;
+                const totalQuestions = 50;
                 
                 // Reset all options
                 quizOptions.forEach(option => {
@@ -1556,17 +2812,23 @@
                 wrongElement.textContent = totalQuestions - score;
                 
                 // Message based on score
-                if (score === totalQuestions) {
-                    messageElement.textContent = "Luar biasa! Anda menguasai materi kerajaan-kerajaan Islam Nusantara dengan sempurna. Pertahankan!";
+                if (score >= 45) {
+                    messageElement.textContent = "LUAR BIASA! Anda benar-benar menguasai materi kerajaan Islam Nusantara dengan sangat mendalam!";
                     messageElement.style.color = '#27ae60';
-                } else if (score >= totalQuestions * 0.7) {
-                    messageElement.textContent = "Bagus sekali! Hampir sempurna, Anda benar-benar memahami sejarah Islam Nusantara.";
-                    messageElement.style.color = '#27ae60';
-                } else if (score >= totalQuestions * 0.5) {
-                    messageElement.textContent = "Cukup baik! Anda memahami sebagian besar materi, tetapi masih ada yang perlu dipelajari lagi.";
+                } else if (score >= 40) {
+                    messageElement.textContent = "SANGAT BAGUS! Pengetahuan Anda tentang sejarah Islam Nusantara sangat komprehensif.";
+                    messageElement.style.color = '#2ecc71';
+                } else if (score >= 35) {
+                    messageElement.textContent = "BAIK SEKALI! Anda memahami sebagian besar materi dengan baik.";
+                    messageElement.style.color = '#3498db';
+                } else if (score >= 30) {
+                    messageElement.textContent = "CUKUP BAIK! Anda menguasai materi inti, tetapi perlu memperdalam detail.";
                     messageElement.style.color = '#f39c12';
+                } else if (score >= 25) {
+                    messageElement.textContent = "PERLU BELAJAR LAGI! Coba pelajari kembali materi utama kerajaan-kerajaan Islam.";
+                    messageElement.style.color = '#e67e22';
                 } else {
-                    messageElement.textContent = "Perlu belajar lebih giat lagi. Coba pelajari kembali materi kerajaan-kerajaan Islam di Nusantara.";
+                    messageElement.textContent = "PERLU USAHA EKSTRA! Materi ini sangat penting, coba baca kembali dengan seksama.";
                     messageElement.style.color = '#e74c3c';
                 }
                 
@@ -1589,91 +2851,6 @@
                 // Scroll to top of quiz
                 document.getElementById('quiz').scrollIntoView({ behavior: 'smooth' });
             });
-            
-            // Interactive map data
-            const kingdomData = {
-                perlak: {
-                    title: "Kesultanan Perlak (840-1292 M)",
-                    desc: "Kerajaan Islam pertama di Nusantara",
-                    details: "<p><strong>Lokasi:</strong> Peureulak, Aceh Timur</p><p><strong>Pendiri:</strong> Sultan Alauddin Syah</p><p><strong>Komoditas:</strong> Lada hitam terbaik</p><p><strong>Peninggalan:</strong> Makam raja-raja di Pidie</p>"
-                },
-                pasai: {
-                    title: "Kesultanan Samudra Pasai (1267-1524 M)",
-                    desc: "Kerajaan Islam pertama pencetak uang emas",
-                    details: "<p><strong>Lokasi:</strong> Lhokseumawe, Aceh Utara</p><p><strong>Pendiri:</strong> Sultan Malik al-Saleh</p><p><strong>Pencapaian:</strong> Pencetak dirham emas pertama</p><p><strong>Julukan:</strong> Serambi Mekah</p>"
-                },
-                aceh: {
-                    title: "Kesultanan Aceh Darussalam (1496-1903 M)",
-                    desc: "Negara Islam terkuat di Nusantara",
-                    details: "<p><strong>Lokasi:</strong> Ujung Sumatera</p><p><strong>Pendiri:</strong> Sultan Ali Mughayat Syah</p><p><strong>Kejayaan:</strong> Sultan Iskandar Muda (1607-1636)</p><p><strong>Perang:</strong> Perang Aceh (1873-1904)</p>"
-                },
-                malaka: {
-                    title: "Kesultanan Malaka (1400-1511 M)",
-                    desc: "Pusat perdagangan internasional Asia Tenggara",
-                    details: "<p><strong>Lokasi:</strong> Selat Malaka</p><p><strong>Pendiri:</strong> Parameswara (Sultan Iskandar Syah)</p><p><strong>Kejatuhan:</strong> Portugis 1511</p><p><strong>Pengaruh:</strong> Pusat penyebaran Islam ke timur</p>"
-                }
-            };
-            
-            // Interactive map functionality
-            const mapMarkers = document.querySelectorAll('.map-marker');
-            const mapTooltip = document.getElementById('map-tooltip');
-            
-            mapMarkers.forEach(marker => {
-                marker.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    const kingdomId = this.getAttribute('data-kingdom');
-                    const kingdom = kingdomData[kingdomId];
-                    
-                    // Update tooltip content
-                    document.getElementById('tooltip-title').textContent = kingdom.title;
-                    document.getElementById('tooltip-desc').textContent = kingdom.desc;
-                    document.getElementById('tooltip-details').innerHTML = kingdom.details;
-                    
-                    // Position tooltip near the marker
-                    const rect = this.getBoundingClientRect();
-                    const mapRect = document.querySelector('.map-container').getBoundingClientRect();
-                    
-                    let left = rect.left - mapRect.left + 40;
-                    let top = rect.top - mapRect.top - 180;
-                    
-                    // Adjust if tooltip goes out of bounds
-                    if (left + 320 > mapRect.width) left = mapRect.width - 340;
-                    if (top < 10) top = 10;
-                    if (top + 250 > mapRect.height) top = mapRect.height - 260;
-                    
-                    mapTooltip.style.left = left + 'px';
-                    mapTooltip.style.top = top + 'px';
-                    
-                    // Show tooltip
-                    mapTooltip.classList.add('show');
-                    
-                    // Close tooltip when clicking outside
-                    setTimeout(() => {
-                        const closeTooltip = (e) => {
-                            if (!mapTooltip.contains(e.target) && !this.contains(e.target)) {
-                                mapTooltip.classList.remove('show');
-                                document.removeEventListener('click', closeTooltip);
-                            }
-                        };
-                        document.addEventListener('click', closeTooltip);
-                    }, 100);
-                });
-            });
-            
-            // Animate timeline items when timeline tab is active
-            function animateTimelineItems() {
-                const timelineItems = document.querySelectorAll('.timeline-item');
-                timelineItems.forEach((item, index) => {
-                    setTimeout(() => {
-                        item.classList.add('visible');
-                    }, index * 200);
-                });
-            }
-            
-            // Check if timeline is active on page load
-            if (document.getElementById('timeline').classList.contains('active')) {
-                setTimeout(animateTimelineItems, 300);
-            }
             
             // Add animation to kingdom cards on scroll
             const observerOptions = {
@@ -1698,12 +2875,12 @@
                 observer.observe(card);
             });
             
-            // Apply animation to timeline items
-            document.querySelectorAll('.timeline-item').forEach(item => {
-                item.style.opacity = '0';
-                item.style.transform = 'translateX(-30px)';
-                item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(item);
+            // Apply animation to key points
+            document.querySelectorAll('.key-point').forEach(point => {
+                point.style.opacity = '0';
+                point.style.transform = 'translateY(20px)';
+                point.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(point);
             });
         });
     </script>
